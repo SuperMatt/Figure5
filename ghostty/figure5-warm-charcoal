@@ -1,0 +1,37 @@
+background = #1E1B19
+foreground = #F0E0B8
+cursor-color = #CC2211
+selection-background = #401818
+selection-foreground = #F0E0B8
+
+# Black / Bright Black (used for comments)
+palette = 0=#1C0A0C
+palette = 8=#8A6448
+
+# Red / Bright Red
+palette = 1=#CC2211
+palette = 9=#FF3322
+
+# Green / Bright Green (shifted yellow-green for red-green colour blindness)
+palette = 2=#5A9400
+palette = 10=#7AC400
+
+# Yellow / Bright Yellow (amber gold — the "5 in Gold")
+palette = 3=#E0961A
+palette = 11=#FFB820
+
+# Blue / Bright Blue
+palette = 4=#3060A8
+palette = 12=#5080D0
+
+# Magenta / Bright Magenta
+palette = 5=#A03060
+palette = 13=#C04880
+
+# Cyan / Bright Cyan
+palette = 6=#487888
+palette = 14=#68A8B8
+
+# White / Bright White
+palette = 7=#CDBA90
+palette = 15=#FAF0D0
