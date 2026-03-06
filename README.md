@@ -4,14 +4,19 @@ A dark terminal and editor colour theme inspired by Charles Demuth's 1928 painti
 *I Saw the Figure 5 in Gold*. Designed with red/green colour blindness in mind —
 greens are shifted to yellow-green (~85° hue) to stay distinguishable from red.
 
-Two background variants are provided. Pick whichever suits your screen and lighting:
+Three variants are provided — two warm, one cool:
 
-| Variant | Background |
-|---|---|
-| `figure5-warm-charcoal` | `#1E1B19` — darker, more austere |
-| `figure5-softer-warm` | `#252220` — slightly lighter, warmer |
+| Variant | Background | Character |
+|---|---|---|
+| `figure5-warm-charcoal` | `#1E1B19` | Very dark, faint warm undertone |
+| `figure5-softer-warm` | `#252220` | Slightly lighter, warmest of the three |
+| `figure5-cool` | `#1C1C1C` | Pure neutral grey, cool blue-grey whites |
 
 ## Palette
+
+The warm and cool variants share all accent colours. Only the background and whites differ.
+
+### Shared
 
 | Role | Hex |
 |---|---|
@@ -25,7 +30,13 @@ Two background variants are provided. Pick whichever suits your screen and light
 | Blue / Bright Blue | `#3060A8` / `#5080D0` |
 | Magenta / Bright Magenta | `#A03060` / `#C04880` |
 | Cyan / Bright Cyan | `#487888` / `#68A8B8` |
-| White / Bright White | `#CDBA90` / `#FAF0D0` |
+
+### Per-variant
+
+| Role | Warm variants | Cool variant |
+|---|---|---|
+| White | `#CDBA90` | `#C4CED8` |
+| Bright White | `#FAF0D0` | `#E0EAF0` |
 
 ## Installation
 
@@ -39,4 +50,5 @@ Then set in `~/.config/ghostty/config`:
 
 ```
 theme = figure5-warm-charcoal
+# or: figure5-softer-warm, figure5-cool
 ```

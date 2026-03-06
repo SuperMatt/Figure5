@@ -9,7 +9,7 @@ is red.
 
 | Application   | Status         | Files                                              |
 |---------------|----------------|----------------------------------------------------|
-| Ghostty       | Done           | `ghostty/figure5-warm-charcoal`, `ghostty/figure5-softer-warm` |
+| Ghostty       | Done           | `ghostty/figure5-warm-charcoal`, `ghostty/figure5-softer-warm`, `ghostty/figure5-cool` |
 | Zed           | Not started    |                                                    |
 | VSCode/Cursor | Not started    |                                                    |
 | Helix         | Not started    |                                                    |
@@ -25,7 +25,7 @@ theme = figure5-warm-charcoal
 theme = figure5-softer-warm
 ```
 
-Two background variants exist — pick whichever feels better at your screen brightness.
+Three variants exist — two warm, one cool. Pick whichever feels better at your screen brightness.
 
 ## Palette
 
@@ -33,6 +33,7 @@ Two background variants exist — pick whichever feels better at your screen bri
 |----------------------------|-----------|----------------|
 | Background (warm charcoal) | `#1E1B19` | 30, 27, 25     |
 | Background (softer warm)   | `#252220` | 37, 34, 32     |
+| Background (cool)          | `#1C1C1C` | 28, 28, 28     |
 | Foreground                 | `#F0E0B8` | 240, 224, 184  |
 | Cursor                     | `#CC2211` | 204, 34, 17    |
 | Selection                  | `#401818` | 64, 24, 24     |
@@ -50,8 +51,10 @@ Two background variants exist — pick whichever feels better at your screen bri
 | Bright Magenta             | `#C04880` | 192, 72, 128   |
 | Cyan                       | `#487888` | 72, 120, 136   |
 | Bright Cyan                | `#68A8B8` | 104, 168, 184  |
-| White                      | `#CDBA90` | 205, 186, 144  |
-| Bright White               | `#FAF0D0` | 250, 240, 208  |
+| White (warm variants)      | `#CDBA90` | 205, 186, 144  |
+| Bright White (warm)        | `#FAF0D0` | 250, 240, 208  |
+| White (cool variant)       | `#C4CED8` | 196, 206, 216  |
+| Bright White (cool)        | `#E0EAF0` | 224, 234, 240  |
 
 ## Design Decisions
 
@@ -69,6 +72,11 @@ interactively:
 - `#1C1C1E` neutral grey — rejected, read as too blue/cold
 - `#181B20` cool grey — rejected, read as too blue
 - `#252220` **softer warm** — slightly lighter, the warmest of the greys ✓
+
+A third cool variant was later added. Several blue-grey backgrounds were evaluated;
+all were rejected as too blue. A pure neutral `#1C1C1C` was chosen instead, paired
+with cool blue-grey whites (`#C4CED8` / `#E0EAF0`) to give a cooler feel without
+a coloured cast in the background itself.
 
 ### Foreground (`#F0E0B8`)
 Warm parchment/ivory, taken from the painting's white arcs. Avoids the harshness of
