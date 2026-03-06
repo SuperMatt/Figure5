@@ -10,7 +10,7 @@ is red.
 | Application   | Status         | Files                                              |
 |---------------|----------------|----------------------------------------------------|
 | Ghostty       | Done           | `ghostty/figure5-warm-charcoal`, `ghostty/figure5-softer-warm`, `ghostty/figure5-cool` |
-| Zed           | Not started    |                                                    |
+| Zed           | Done           | `zed/figure5.json`                                 |
 | VSCode/Cursor | Not started    |                                                    |
 | Helix         | Not started    |                                                    |
 | k9s           | Not started    |                                                    |
@@ -28,6 +28,20 @@ theme = figure5-cool
 ```
 
 Three variants exist — two warm, one cool. Pick whichever feels better at your screen brightness.
+
+## Zed Usage
+
+Run `make zed` to install, or copy `zed/figure5.json` to `~/.config/zed/themes/` manually. Then set in `~/.config/zed/settings.json`:
+
+```json
+"theme": "Figure 5 – Warm Charcoal"
+// or
+"theme": "Figure 5 – Softer Warm"
+// or
+"theme": "Figure 5 – Cool"
+```
+
+Or open the theme picker (`Ctrl+K Ctrl+T`) and search for "Figure 5".
 
 ## Palette
 

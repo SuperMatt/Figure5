@@ -49,15 +49,28 @@ make preview-cool  # cool variant
 
 ## Installation
 
-### Ghostty
-
 ```sh
+make        # install everything
 make ghostty
+make zed
 ```
 
-Then set in `~/.config/ghostty/config`:
+### Ghostty
+
+Copies themes to `~/.config/ghostty/themes/`. Then set in `~/.config/ghostty/config`:
 
 ```
 theme = figure5-warm-charcoal
 # or: figure5-softer-warm, figure5-cool
 ```
+
+### Zed
+
+Copies `zed/figure5.json` to `~/.config/zed/themes/`. Then set in `~/.config/zed/settings.json`:
+
+```json
+"theme": "Figure 5 – Warm Charcoal"
+// or: "Figure 5 – Softer Warm", "Figure 5 – Cool"
+```
+
+Or open the theme picker (`Ctrl+K Ctrl+T`) and search for "Figure 5".
