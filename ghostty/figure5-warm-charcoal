@@ -1,6 +1,6 @@
 background = #1E1B19
 foreground = #F0E0B8
-cursor-color = #CC2211
+cursor-color = #FAF0D0
 selection-background = #401818
 selection-foreground = #F0E0B8
 
@@ -13,8 +13,8 @@ palette = 1=#CC2211
 palette = 9=#FF3322
 
 # Green / Bright Green (shifted yellow-green for red-green colour blindness)
-palette = 2=#5A9400
-palette = 10=#7AC400
+palette = 2=#6CB200
+palette = 10=#8ED400
 
 # Yellow / Bright Yellow (amber gold — the "5 in Gold")
 palette = 3=#E0961A

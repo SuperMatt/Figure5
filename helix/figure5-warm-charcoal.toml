@@ -11,8 +11,8 @@
 "ui.text.inactive"           = { fg = "text_muted" }
 "ui.text.info"               = { fg = "gold" }
 
-"ui.cursor"                  = { fg = "bg", bg = "red" }
-"ui.cursor.primary"          = { fg = "bg", bg = "red" }
+"ui.cursor"                  = { fg = "bg", bg = "bright_white" }
+"ui.cursor.primary"          = { fg = "bg", bg = "bright_white" }
 "ui.cursor.insert"           = { fg = "bg", bg = "gold" }
 "ui.cursor.select"           = { fg = "bg", bg = "cyan" }
 "ui.cursor.match"            = { fg = "bg", bg = "bright_yellow", modifiers = ["bold"] }
@@ -196,8 +196,8 @@ bright_black = "#8A6448"
 
 red          = "#CC2211"
 bright_red   = "#FF3322"
-green        = "#5A9400"
-bright_green = "#7AC400"
+green        = "#6CB200"
+bright_green = "#8ED400"
 gold         = "#E0961A"
 bright_yellow = "#FFB820"
 blue         = "#4878C8"

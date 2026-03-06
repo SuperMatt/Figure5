@@ -2,12 +2,12 @@
 # k9s skin — install to ~/.config/k9s/skins/ and set `skin: figure5-cool` in config.yaml
 k9s:
   body:
-    fgColor: "#D8DDE4"
+    fgColor: "#E0EAF0"
     bgColor: "#1C1C1C"
     logoColor: "#CC2211"
 
   prompt:
-    fgColor: "#D8DDE4"
+    fgColor: "#E0EAF0"
     bgColor: "#1C1C1C"
     suggestColor: "#E0961A"
 
@@ -16,14 +16,14 @@ k9s:
     bgColor: "#1C1C1C"
 
   dialog:
-    fgColor: "#D8DDE4"
+    fgColor: "#E0EAF0"
     bgColor: "#242424"
     buttonFgColor: "#1C1C1C"
     buttonBgColor: "#CC2211"
     buttonFocusFgColor: "#1C1C1C"
     buttonFocusBgColor: "#FF3322"
     labelFgColor: "#E0961A"
-    fieldFgColor: "#D8DDE4"
+    fieldFgColor: "#E0EAF0"
 
   frame:
     border:
@@ -31,7 +31,7 @@ k9s:
       focusColor: "#CC2211"
 
     menu:
-      fgColor: "#D8DDE4"
+      fgColor: "#E0EAF0"
       keyColor: "#E0961A"
       numKeyColor: "#CC2211"
 
@@ -41,9 +41,9 @@ k9s:
       activeColor: "#CC2211"
 
     status:
-      newColor: "#7AC400"
+      newColor: "#8ED400"
       modifyColor: "#E0961A"
-      addColor: "#7AC400"
+      addColor: "#8ED400"
       errorColor: "#FF3322"
       highlightColor: "#FFB820"
       killColor: "#CC2211"
@@ -67,7 +67,7 @@ k9s:
         - "#5A90A0"
 
     table:
-      fgColor: "#D8DDE4"
+      fgColor: "#E0EAF0"
       bgColor: "#1C1C1C"
       cursorFgColor: "#1C1C1C"
       cursorBgColor: "#CC2211"
@@ -78,7 +78,7 @@ k9s:
         sorterColor: "#CC2211"
 
     xray:
-      fgColor: "#D8DDE4"
+      fgColor: "#E0EAF0"
       bgColor: "#1C1C1C"
       cursorColor: "#CC2211"
       graphicColor: "#E0961A"
@@ -87,29 +87,29 @@ k9s:
     yaml:
       keyColor: "#E0961A"
       colonColor: "#C4CED8"
-      valueColor: "#5A9400"
+      valueColor: "#6CB200"
 
     logs:
-      fgColor: "#D8DDE4"
+      fgColor: "#E0EAF0"
       bgColor: "#1C1C1C"
       indicator:
         fgColor: "#E0EAF0"
         bgColor: "#CC2211"
 
     help:
-      fgColor: "#D8DDE4"
+      fgColor: "#E0EAF0"
       bgColor: "#1C1C1C"
       keyColor: "#E0961A"
       numKeyColor: "#CC2211"
       sectionColor: "#E0EAF0"
 
     filter:
-      fgColor: "#D8DDE4"
+      fgColor: "#E0EAF0"
       bgColor: "#1C1C1C"
       highlightColor: "#E0961A"
 
     dump:
-      fgColor: "#D8DDE4"
+      fgColor: "#E0EAF0"
       bgColor: "#1C1C1C"
       header:
         fgColor: "#E0961A"

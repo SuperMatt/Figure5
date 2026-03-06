@@ -76,14 +76,15 @@ Or open the theme picker (`Ctrl+K Ctrl+T`) and search for "Figure 5".
 | Background (cool)          | `#1C1C1C` | 28, 28, 28     |
 | Foreground (warm variants) | `#F0E0B8` | 240, 224, 184  |
 | Foreground (cool variant)  | `#D8DDE4` | 216, 221, 228  |
-| Cursor                     | `#CC2211` | 204, 34, 17    |
+| Cursor (warm)              | `#FAF0D0` | 250, 240, 208  |
+| Cursor (cool)              | `#E0EAF0` | 224, 234, 240  |
 | Selection                  | `#401818` | 64, 24, 24     |
 | Black                      | `#1C0A0C` | 28, 10, 12     |
 | Bright Black               | `#8A6448` | 138, 100, 72   |
 | Red                        | `#CC2211` | 204, 34, 17    |
 | Bright Red                 | `#FF3322` | 255, 51, 34    |
-| Green                      | `#5A9400` | 90, 148, 0     |
-| Bright Green               | `#7AC400` | 122, 196, 0    |
+| Green                      | `#6CB200` | 108, 178, 0    |
+| Bright Green               | `#8ED400` | 142, 212, 0    |
 | Yellow                     | `#E0961A` | 224, 150, 26   |
 | Bright Yellow              | `#FFB820` | 255, 184, 32   |
 | Blue                       | `#4878C8` | 72, 120, 200   |
@@ -127,16 +128,17 @@ The cool variant uses `#D8DDE4` — a cool blue-grey white that pairs with the n
 background and cool whites. Several options were evaluated; cooler foregrounds were
 rejected as too blue, warmer ones looked inconsistent against the cool whites.
 
-### Cursor (`#CC2211`)
-The user's favourite colour is red. The cursor is the most personal element of a
-terminal, so it gets the full vivid scarlet.
+### Cursor (`#FAF0D0` / `#E0EAF0`)
+Changed from the original red (`#CC2211`) to bright white. White gives maximum
+contrast against any background colour and is instantly visible regardless of
+what colour the text beneath it is.
 
 ### Red (`#CC2211` / `#FF3322`)
 Kept close to the painting's crimson. Vivid and saturated so it stays legible as
 an accent even for a colour-blind viewer (who sees red as brownish — high saturation
 helps it remain distinct from other warm tones by luminance alone).
 
-### Green (`#5A9400` / `#7AC400`)
+### Green (`#6CB200` / `#8ED400`)
 The trickiest colour for a red-green colour-blind user. Pure greens are indistinguishable
 from reds for deuteranopes. These greens sit at ~85° hue (yellow-green), which is
 distinguishable from red by both hue angle and luminance. They were initially too far

@@ -20,11 +20,11 @@ fi
 
 C_BLACK="28;10;12";      C_BBLACK="138;100;72"
 C_RED="204;34;17";       C_BRED="255;51;34"
-C_GREEN="90;148;0";      C_BGREEN="122;196;0"
+C_GREEN="108;178;0";     C_BGREEN="142;212;0"
 C_YELLOW="224;150;26";   C_BYELLOW="255;184;32"
-C_BLUE="48;96;168";      C_BBLUE="80;128;208"
-C_MAGENTA="160;48;96";   C_BMAGENTA="192;72;128"
-C_CYAN="72;120;136";     C_BCYAN="104;168;184"
+C_BLUE="72;120;200";     C_BBLUE="80;128;208"
+C_MAGENTA="184;64;120";  C_BMAGENTA="192;72;128"
+C_CYAN="90;144;160";     C_BCYAN="104;168;184"
 
 b()  { printf "\033[48;2;${1}m"; }
 f()  { printf "\033[38;2;${1}m"; }
@@ -67,7 +67,7 @@ printf "  "; gold "Base Colors"; nl
 dim "  ─────────────────────────────────────────────────────────────────"; nl
 printf "    "; swatch "$BG"       "variant"            "Background"; nl
 printf "    "; swatch "$FG"       "variant"            "Foreground"; nl
-printf "    "; swatch "204;34;17" "#CC2211"            "Cursor"; nl
+printf "    "; swatch "$C_BWHITE"  "variant"            "Cursor"; nl
 printf "    "; swatch "64;24;20"  "#401818"            "Selection"; nl
 nl
 
@@ -76,11 +76,11 @@ f "100;70;40"; printf "                          standard → bright"; r; nl
 dim "  ─────────────────────────────────────────────────────────────────"; nl
 pair_row "Black"   "#1C0A0C" "$C_BLACK"   "Bright Black"   "#8A6448"  "$C_BBLACK"
 pair_row "Red ♥"   "#CC2211" "$C_RED"     "Bright Red"     "#FF3322"  "$C_BRED"
-pair_row "Green"   "#5A9400" "$C_GREEN"   "Bright Green"   "#7AC400"  "$C_BGREEN"
+pair_row "Green"   "#6CB200" "$C_GREEN"   "Bright Green"   "#8ED400"  "$C_BGREEN"
 pair_row "Yellow"  "#E0961A" "$C_YELLOW"  "Bright Yellow"  "#FFB820"  "$C_BYELLOW"
-pair_row "Blue"    "#3060A8" "$C_BLUE"    "Bright Blue"    "#5080D0"  "$C_BBLUE"
-pair_row "Magenta" "#A03060" "$C_MAGENTA" "Bright Magenta" "#C04880"  "$C_BMAGENTA"
-pair_row "Cyan"    "#487888" "$C_CYAN"    "Bright Cyan"    "#68A8B8"  "$C_BCYAN"
+pair_row "Blue"    "#4878C8" "$C_BLUE"    "Bright Blue"    "#5080D0"  "$C_BBLUE"
+pair_row "Magenta" "#B84078" "$C_MAGENTA" "Bright Magenta" "#C04880"  "$C_BMAGENTA"
+pair_row "Cyan"    "#5A90A0" "$C_CYAN"    "Bright Cyan"    "#68A8B8"  "$C_BCYAN"
 pair_row "White"   "variant" "$C_WHITE"   "Bright White"   "variant"  "$C_BWHITE"
 nl
 
