@@ -23,6 +23,8 @@ Copy the theme file to `~/.config/ghostty/themes/`, then set in `~/.config/ghost
 theme = figure5-warm-charcoal
 # or
 theme = figure5-softer-warm
+# or
+theme = figure5-cool
 ```
 
 Three variants exist — two warm, one cool. Pick whichever feels better at your screen brightness.
@@ -34,7 +36,8 @@ Three variants exist — two warm, one cool. Pick whichever feels better at your
 | Background (warm charcoal) | `#1E1B19` | 30, 27, 25     |
 | Background (softer warm)   | `#252220` | 37, 34, 32     |
 | Background (cool)          | `#1C1C1C` | 28, 28, 28     |
-| Foreground                 | `#F0E0B8` | 240, 224, 184  |
+| Foreground (warm variants) | `#F0E0B8` | 240, 224, 184  |
+| Foreground (cool variant)  | `#D8DDE4` | 216, 221, 228  |
 | Cursor                     | `#CC2211` | 204, 34, 17    |
 | Selection                  | `#401818` | 64, 24, 24     |
 | Black                      | `#1C0A0C` | 28, 10, 12     |
@@ -78,9 +81,13 @@ all were rejected as too blue. A pure neutral `#1C1C1C` was chosen instead, pair
 with cool blue-grey whites (`#C4CED8` / `#E0EAF0`) to give a cooler feel without
 a coloured cast in the background itself.
 
-### Foreground (`#F0E0B8`)
-Warm parchment/ivory, taken from the painting's white arcs. Avoids the harshness of
-pure white while maintaining strong contrast against the dark background.
+### Foreground
+The warm variants use `#F0E0B8` — warm parchment/ivory, taken from the painting's
+white arcs. Avoids the harshness of pure white while maintaining strong contrast.
+
+The cool variant uses `#D8DDE4` — a cool blue-grey white that pairs with the neutral
+background and cool whites. Several options were evaluated; cooler foregrounds were
+rejected as too blue, warmer ones looked inconsistent against the cool whites.
 
 ### Cursor (`#CC2211`)
 The user's favourite colour is red. The cursor is the most personal element of a
@@ -120,6 +127,10 @@ without disappearing.
 Warm tans rather than neutral greys, keeping the palette tonally consistent. True
 neutral greys would feel cold and disconnected from the rest of the palette. Bumped
 slightly from the initial values (`#C0A880` / `#F5E8C0`) which were a touch too dim.
+
+## Preview Script
+
+`preview.sh` — run with `bash preview.sh warm` or `bash preview.sh cool` (or `make preview` / `make preview-cool`) to see palette swatches and a syntax sample for either variant family.
 
 ## Notes for Future Apps
 
