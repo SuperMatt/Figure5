@@ -38,6 +38,13 @@ The warm and cool variants share all accent colours. Only the background and whi
 | White | `#CDBA90` | `#C4CED8` |
 | Bright White | `#FAF0D0` | `#E0EAF0` |
 
+## Preview
+
+```sh
+make preview       # warm variants
+make preview-cool  # cool variant
+```
+
 ## Installation
 
 ### Ghostty
