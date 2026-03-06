@@ -1,0 +1,17 @@
+# Figure 5 – Slack Sidebar Themes
+#
+# To apply: Slack > Preferences > Themes > Custom Theme
+# Paste one of the comma-separated colour strings below.
+#
+# Column order:
+#   Column BG, Menu BG Hover, Active Item, Active Item Text,
+#   Hover Item, Text Color, Active Presence, Mention Badge
+#
+# ── Warm Charcoal ────────────────────────────────────────────────────────────
+#1E1B19,#2E2A27,#CC2211,#FAF0D0,#401818,#CDBA90,#7AC400,#CC2211
+
+# ── Softer Warm ──────────────────────────────────────────────────────────────
+#252220,#2E2A27,#CC2211,#FAF0D0,#401818,#CDBA90,#7AC400,#CC2211
+
+# ── Cool ─────────────────────────────────────────────────────────────────────
+#1C1C1C,#2C2C2C,#CC2211,#E0EAF0,#401818,#C4CED8,#7AC400,#CC2211

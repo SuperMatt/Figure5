@@ -1,0 +1,116 @@
+# Figure 5 – Warm Charcoal
+# k9s skin — install to ~/.config/k9s/skins/ and set `skin: figure5-warm-charcoal` in config.yaml
+k9s:
+  body:
+    fgColor: "#F0E0B8"
+    bgColor: "#1E1B19"
+    logoColor: "#CC2211"
+
+  prompt:
+    fgColor: "#F0E0B8"
+    bgColor: "#1E1B19"
+    suggestColor: "#E0961A"
+
+  info:
+    fgColor: "#E0961A"
+    bgColor: "#1E1B19"
+
+  dialog:
+    fgColor: "#F0E0B8"
+    bgColor: "#252220"
+    buttonFgColor: "#1E1B19"
+    buttonBgColor: "#CC2211"
+    buttonFocusFgColor: "#1E1B19"
+    buttonFocusBgColor: "#FF3322"
+    labelFgColor: "#E0961A"
+    fieldFgColor: "#F0E0B8"
+
+  frame:
+    border:
+      fgColor: "#3A3530"
+      focusColor: "#CC2211"
+
+    menu:
+      fgColor: "#F0E0B8"
+      keyColor: "#E0961A"
+      numKeyColor: "#CC2211"
+
+    crumbs:
+      fgColor: "#1E1B19"
+      bgColor: "#E0961A"
+      activeColor: "#CC2211"
+
+    status:
+      newColor: "#7AC400"
+      modifyColor: "#E0961A"
+      addColor: "#7AC400"
+      errorColor: "#FF3322"
+      highlightColor: "#FFB820"
+      killColor: "#CC2211"
+      completedColor: "#8A6448"
+
+    title:
+      fgColor: "#FAF0D0"
+      bgColor: "#1E1B19"
+      highlightColor: "#E0961A"
+      counterColor: "#CC2211"
+      filterColor: "#5A90A0"
+
+  views:
+    charts:
+      bgColor: "default"
+      defaultDialColors:
+        - "#CC2211"
+        - "#5A90A0"
+      defaultChartColors:
+        - "#CC2211"
+        - "#5A90A0"
+
+    table:
+      fgColor: "#F0E0B8"
+      bgColor: "#1E1B19"
+      cursorFgColor: "#1E1B19"
+      cursorBgColor: "#CC2211"
+      markColor: "#E0961A"
+      header:
+        fgColor: "#E0961A"
+        bgColor: "#1E1B19"
+        sorterColor: "#CC2211"
+
+    xray:
+      fgColor: "#F0E0B8"
+      bgColor: "#1E1B19"
+      cursorColor: "#CC2211"
+      graphicColor: "#E0961A"
+      showIcons: false
+
+    yaml:
+      keyColor: "#E0961A"
+      colonColor: "#CDBA90"
+      valueColor: "#5A9400"
+
+    logs:
+      fgColor: "#F0E0B8"
+      bgColor: "#1E1B19"
+      indicator:
+        fgColor: "#FAF0D0"
+        bgColor: "#CC2211"
+
+    help:
+      fgColor: "#F0E0B8"
+      bgColor: "#1E1B19"
+      keyColor: "#E0961A"
+      numKeyColor: "#CC2211"
+      sectionColor: "#FAF0D0"
+
+    filter:
+      fgColor: "#F0E0B8"
+      bgColor: "#1E1B19"
+      highlightColor: "#E0961A"
+
+    dump:
+      fgColor: "#F0E0B8"
+      bgColor: "#1E1B19"
+      header:
+        fgColor: "#E0961A"
+        bgColor: "#1E1B19"

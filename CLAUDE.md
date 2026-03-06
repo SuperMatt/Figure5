@@ -12,8 +12,8 @@ is red.
 | Ghostty       | Done           | `ghostty/figure5-warm-charcoal`, `ghostty/figure5-softer-warm`, `ghostty/figure5-cool` |
 | Zed           | Done           | `zed/figure5.json`                                 |
 | VSCode/Cursor | Not started    |                                                    |
-| Helix         | Not started    |                                                    |
-| k9s           | Not started    |                                                    |
+| Helix         | Done           | `helix/figure5-{warm-charcoal,softer-warm,cool}.toml` |
+| k9s           | Done           | `k9s/figure5-{warm-charcoal,softer-warm,cool}.yaml`   |
 
 ## Ghostty Usage
 
@@ -28,6 +28,30 @@ theme = figure5-cool
 ```
 
 Three variants exist — two warm, one cool. Pick whichever feels better at your screen brightness.
+
+## Helix Usage
+
+Run `make helix` to install, or copy the `.toml` files to `~/.config/helix/themes/`. Then set in `~/.config/helix/config.toml`:
+
+```toml
+theme = "figure5-warm-charcoal"
+# or: figure5-softer-warm, figure5-cool
+```
+
+## k9s Usage
+
+Run `make k9s` to install, or copy the `.yaml` files to `~/.config/k9s/skins/`. Then set in `~/.config/k9s/config.yaml`:
+
+```yaml
+k9s:
+  ui:
+    skin: figure5-warm-charcoal
+```
+
+## Slack Usage
+
+No installable file — Slack sidebar themes are applied in-app. Open:
+**Preferences > Themes > Custom Theme** and paste a colour string from `slack/figure5.txt`.
 
 ## Zed Usage
 

@@ -50,9 +50,11 @@ make preview-cool  # cool variant
 ## Installation
 
 ```sh
-make        # install everything
+make           # install everything
 make ghostty
 make zed
+make helix
+make k9s
 ```
 
 ### Ghostty
@@ -74,3 +76,26 @@ Copies `zed/figure5.json` to `~/.config/zed/themes/`. Then set in `~/.config/zed
 ```
 
 Or open the theme picker (`Ctrl+K Ctrl+T`) and search for "Figure 5".
+
+### Helix
+
+Copies `.toml` files to `~/.config/helix/themes/`. Then set in `~/.config/helix/config.toml`:
+
+```toml
+theme = "figure5-warm-charcoal"
+# or: figure5-softer-warm, figure5-cool
+```
+
+### k9s
+
+Copies `.yaml` files to `~/.config/k9s/skins/`. Then set in `~/.config/k9s/config.yaml`:
+
+```yaml
+k9s:
+  ui:
+    skin: figure5-warm-charcoal
+```
+
+### Slack
+
+No installable file. Go to **Preferences > Themes > Custom Theme** and paste a colour string from `slack/figure5.txt`.
