@@ -21,15 +21,15 @@ palette = 3=#E0961A
 palette = 11=#FFB820
 
 # Blue / Bright Blue
-palette = 4=#3060A8
+palette = 4=#4878C8
 palette = 12=#5080D0
 
 # Magenta / Bright Magenta
-palette = 5=#A03060
+palette = 5=#B84078
 palette = 13=#C04880
 
 # Cyan / Bright Cyan
-palette = 6=#487888
+palette = 6=#5A90A0
 palette = 14=#68A8B8
 
 # White / Bright White

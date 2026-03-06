@@ -48,11 +48,11 @@ Three variants exist — two warm, one cool. Pick whichever feels better at your
 | Bright Green               | `#7AC400` | 122, 196, 0    |
 | Yellow                     | `#E0961A` | 224, 150, 26   |
 | Bright Yellow              | `#FFB820` | 255, 184, 32   |
-| Blue                       | `#3060A8` | 48, 96, 168    |
+| Blue                       | `#4878C8` | 72, 120, 200   |
 | Bright Blue                | `#5080D0` | 80, 128, 208   |
-| Magenta                    | `#A03060` | 160, 48, 96    |
+| Magenta                    | `#B84078` | 184, 64, 120   |
 | Bright Magenta             | `#C04880` | 192, 72, 128   |
-| Cyan                       | `#487888` | 72, 120, 136   |
+| Cyan                       | `#5A90A0` | 90, 144, 160   |
 | Bright Cyan                | `#68A8B8` | 104, 168, 184  |
 | White (warm variants)      | `#CDBA90` | 205, 186, 144  |
 | Bright White (warm)        | `#FAF0D0` | 250, 240, 208  |
