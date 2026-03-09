@@ -81,14 +81,14 @@
 "attribute"                 = { fg = "gold" }
 
 "type"                      = { fg = "cyan" }
-"type.builtin"              = { fg = "cyan", modifiers = ["italic"] }
-"type.parameter"            = { fg = "cyan", modifiers = ["italic"] }
+"type.builtin"              = { fg = "cyan" }
+"type.parameter"            = { fg = "cyan" }
 "type.enum.variant"         = { fg = "bright_cyan" }
 
 "constructor"               = { fg = "bright_blue" }
 
 "constant"                  = { fg = "bright_magenta" }
-"constant.builtin"          = { fg = "bright_magenta", modifiers = ["italic"] }
+"constant.builtin"          = { fg = "bright_magenta" }
 "constant.builtin.boolean"  = { fg = "bright_yellow" }
 "constant.character"        = { fg = "green" }
 "constant.character.escape" = { fg = "bright_green" }
@@ -103,15 +103,15 @@
 "string.special.url"        = { fg = "bright_cyan", modifiers = ["underlined"] }
 "string.special.symbol"     = { fg = "bright_green" }
 
-"comment"                   = { fg = "bright_black", modifiers = ["italic"] }
-"comment.line"              = { fg = "bright_black", modifiers = ["italic"] }
-"comment.block"             = { fg = "bright_black", modifiers = ["italic"] }
-"comment.block.documentation" = { fg = "bright_black", modifiers = ["italic"] }
+"comment"                   = { fg = "bright_black" }
+"comment.line"              = { fg = "bright_black" }
+"comment.block"             = { fg = "bright_black" }
+"comment.block.documentation" = { fg = "bright_black" }
 
 "variable"                  = { fg = "fg" }
-"variable.builtin"          = { fg = "bright_cyan", modifiers = ["italic"] }
+"variable.builtin"          = { fg = "bright_cyan" }
 "variable.parameter"        = { fg = "fg" }
-"variable.parameter.builtin" = { fg = "bright_cyan", modifiers = ["italic"] }
+"variable.parameter.builtin" = { fg = "bright_cyan" }
 "variable.other"            = { fg = "fg" }
 "variable.other.member"     = { fg = "bright_cyan" }
 
@@ -122,31 +122,31 @@
 "punctuation.bracket"       = { fg = "text_muted" }
 "punctuation.special"       = { fg = "bright_magenta" }
 
-"keyword"                           = { fg = "magenta", modifiers = ["italic"] }
-"keyword.control"                   = { fg = "magenta", modifiers = ["italic"] }
-"keyword.control.conditional"       = { fg = "magenta", modifiers = ["italic"] }
-"keyword.control.repeat"            = { fg = "magenta", modifiers = ["italic"] }
-"keyword.control.import"            = { fg = "magenta", modifiers = ["italic"] }
-"keyword.control.return"            = { fg = "magenta", modifiers = ["italic"] }
-"keyword.control.exception"         = { fg = "magenta", modifiers = ["italic"] }
+"keyword"                           = { fg = "magenta" }
+"keyword.control"                   = { fg = "magenta" }
+"keyword.control.conditional"       = { fg = "magenta" }
+"keyword.control.repeat"            = { fg = "magenta" }
+"keyword.control.import"            = { fg = "magenta" }
+"keyword.control.return"            = { fg = "magenta" }
+"keyword.control.exception"         = { fg = "magenta" }
 "keyword.operator"                  = { fg = "magenta" }
 "keyword.directive"                 = { fg = "magenta" }
-"keyword.function"                  = { fg = "magenta", modifiers = ["italic"] }
-"keyword.storage"                   = { fg = "magenta", modifiers = ["italic"] }
-"keyword.storage.type"              = { fg = "magenta", modifiers = ["italic"] }
-"keyword.storage.modifier"          = { fg = "magenta", modifiers = ["italic"] }
+"keyword.function"                  = { fg = "magenta" }
+"keyword.storage"                   = { fg = "magenta" }
+"keyword.storage.type"              = { fg = "magenta" }
+"keyword.storage.modifier"          = { fg = "magenta" }
 
 "operator"                  = { fg = "text_muted" }
 
 "function"                  = { fg = "blue" }
-"function.builtin"          = { fg = "blue", modifiers = ["italic"] }
+"function.builtin"          = { fg = "blue" }
 "function.method"           = { fg = "blue" }
 "function.method.private"   = { fg = "blue" }
 "function.macro"            = { fg = "bright_blue" }
 "function.special"          = { fg = "bright_blue" }
 
 "tag"                       = { fg = "red" }
-"tag.builtin"               = { fg = "red", modifiers = ["italic"] }
+"tag.builtin"               = { fg = "red" }
 
 "namespace"                 = { fg = "bright_yellow" }
 "special"                   = { fg = "bright_magenta" }
@@ -167,13 +167,13 @@
 "markup.list.checked"       = { fg = "bright_green" }
 "markup.list.unchecked"     = { fg = "bright_black" }
 "markup.bold"               = { modifiers = ["bold"] }
-"markup.italic"             = { modifiers = ["italic"] }
+"markup.italic"             = {}
 "markup.strikethrough"      = { modifiers = ["crossed_out"] }
 "markup.link"               = { fg = "bright_cyan" }
 "markup.link.url"           = { fg = "cyan", modifiers = ["underlined"] }
 "markup.link.label"         = { fg = "bright_cyan" }
 "markup.link.text"          = { fg = "bright_cyan" }
-"markup.quote"              = { fg = "bright_black", modifiers = ["italic"] }
+"markup.quote"              = { fg = "bright_black" }
 "markup.raw"                = { fg = "green" }
 "markup.raw.inline"         = { fg = "green" }
 "markup.raw.block"          = { fg = "green" }
