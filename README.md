@@ -22,8 +22,8 @@ The warm and cool variants share all accent colours. Only the background and whi
 
 | Role | Hex |
 |---|---|
-| Foreground | `#F0E0B8` |
-| Cursor | `#CC2211` |
+| Foreground (warm) | `#F0E0B8` |
+| Foreground (cool) | `#D8DDE4` |
 | Selection | `#401818` |
 | Black / Bright Black | `#1C0A0C` / `#8A6448` |
 | Red / Bright Red | `#CC2211` / `#FF3322` |
@@ -37,6 +37,7 @@ The warm and cool variants share all accent colours. Only the background and whi
 
 | Role | Warm variants | Cool variant |
 |---|---|---|
+| Cursor | `#FAF0D0` | `#E0EAF0` |
 | White | `#CDBA90` | `#C4CED8` |
 | Bright White | `#FAF0D0` | `#E0EAF0` |
 

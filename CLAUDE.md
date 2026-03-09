@@ -11,6 +11,7 @@ is red.
 |---------------|----------------|----------------------------------------------------|
 | Ghostty       | Done           | `ghostty/figure5-warm-charcoal`, `ghostty/figure5-softer-warm`, `ghostty/figure5-cool` |
 | Zed           | Done           | `zed/figure5.json`                                 |
+| Slack         | Done           | `slack/figure5.txt` (paste into app)               |
 | VSCode/Cursor | Not started    |                                                    |
 | Helix         | Done           | `helix/figure5-{warm-charcoal,softer-warm,cool}.toml` |
 | k9s           | Done           | `k9s/figure5-{warm-charcoal,softer-warm,cool}.yaml`   |
@@ -149,12 +150,12 @@ spectral green.
 Directly from the painting's gold numeral. Amber rather than lemon yellow, warm and
 rich. This is the "hero" accent colour of the palette alongside red.
 
-### Blue (`#3060A8` / `#5080D0`)
+### Blue (`#4878C8` / `#5080D0`)
 A cool counterpoint to the warm reds and golds. Taken from the cool atmospheric depth
 in the painting's background. Kept deliberately distinct in hue from cyan so both
 colours remain useful.
 
-### Magenta (`#A03060` / `#C04880`)
+### Magenta (`#B84078` / `#C04880`)
 A pink-red with strong blue content. The blue component ensures it doesn't blur with
 red for a colour-blind viewer — it reads as clearly purple-pink rather than red-adjacent.
 
@@ -172,10 +173,16 @@ slightly from the initial values (`#C0A880` / `#F5E8C0`) which were a touch too 
 
 `preview.sh` — run with `bash preview.sh warm` or `bash preview.sh cool` (or `make preview` / `make preview-cool`) to see palette swatches and a syntax sample for either variant family.
 
+### Italics
+Removed entirely from all editor themes (Helix, Zed). Italic font rendering is
+inconsistent across terminals and fonts, and adds visual noise without aiding
+comprehension. All tokens that were italic are now rendered in their colour alone.
+
 ## Notes for Future Apps
 
 - Comment colours should be set explicitly in editor configs rather than relying on
   ANSI Bright Black — this gives more control per-application.
-- k9s: map green→success, red→error, yellow→warning, cyan→info.
+- k9s: white=running/ready (healthy), amber=modified/warning, red=error/kill,
+  brown=completed. Green is not used for status — it is unreliable for deuteranopes.
 - The palette was designed and iterated interactively in Ghostty with true-colour
   ANSI previews, so the hex values reflect what actually looked good on screen.
