@@ -41,9 +41,9 @@ k9s:
       activeColor: "#CC2211"
 
     status:
-      newColor: "#8ED400"
+      newColor: "#FAF0D0"
       modifyColor: "#E0961A"
-      addColor: "#8ED400"
+      addColor: "#FAF0D0"
       errorColor: "#FF3322"
       highlightColor: "#FFB820"
       killColor: "#CC2211"
