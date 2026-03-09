@@ -5,7 +5,7 @@ K9S_SKINS_DIR      := $(HOME)/.config/k9s/skins
 
 .PHONY: all ghostty zed helix k9s \
         uninstall-ghostty uninstall-zed uninstall-helix uninstall-k9s \
-        preview preview-cool
+        preview preview-cool showcase screenshot
 
 all: ghostty zed helix k9s
 
@@ -54,3 +54,16 @@ preview:
 
 preview-cool:
 	bash preview.sh cool
+
+showcase:
+	bash showcase.sh warm
+
+showcase-softer:
+	bash showcase.sh softer
+
+showcase-cool:
+	bash showcase.sh cool
+
+screenshot:
+	@echo "Requires: ghostty themes installed (make ghostty) + gnome-screenshot (GNOME), grim (Sway/Hyprland), or scrot (X11)"
+	bash screenshot-themes.sh

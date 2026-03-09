@@ -41,11 +41,24 @@ The warm and cool variants share all accent colours. Only the background and whi
 | White | `#CDBA90` | `#C4CED8` |
 | Bright White | `#FAF0D0` | `#E0EAF0` |
 
+## Screenshots
+
+### Warm Charcoal
+![figure5-warm-charcoal](screenshots/figure5-warm-charcoal.png)
+
+### Softer Warm
+![figure5-softer-warm](screenshots/figure5-softer-warm.png)
+
+### Cool
+![figure5-cool](screenshots/figure5-cool.png)
+
 ## Preview
 
 ```sh
 make preview       # warm variants
 make preview-cool  # cool variant
+make showcase      # full showcase (palette + Helix + k9s)
+make screenshot    # regenerate screenshots
 ```
 
 ## Installation
