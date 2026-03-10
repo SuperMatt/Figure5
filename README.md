@@ -64,16 +64,18 @@ make screenshot    # regenerate screenshots
 ## Installation
 
 ```sh
-make           # install everything
+make           # install everything (symlinks by default)
 make ghostty
 make zed
 make helix
 make k9s
+
+make INSTALL_METHOD=copy   # copy files instead of symlinking
 ```
 
 ### Ghostty
 
-Copies themes to `~/.config/ghostty/themes/`. Then set in `~/.config/ghostty/config`:
+Symlinks (or copies) themes to `~/.config/ghostty/themes/`. Then set in `~/.config/ghostty/config`:
 
 ```
 theme = figure5-warm-charcoal
@@ -82,7 +84,7 @@ theme = figure5-warm-charcoal
 
 ### Zed
 
-Copies `zed/figure5.json` to `~/.config/zed/themes/`. Then set in `~/.config/zed/settings.json`:
+Symlinks (or copies) `zed/figure5.json` to `~/.config/zed/themes/`. Then set in `~/.config/zed/settings.json`:
 
 ```json
 "theme": "Figure 5 – Warm Charcoal"
@@ -93,7 +95,7 @@ Or open the theme picker (`Ctrl+K Ctrl+T`) and search for "Figure 5".
 
 ### Helix
 
-Copies `.toml` files to `~/.config/helix/themes/`. Then set in `~/.config/helix/config.toml`:
+Symlinks (or copies) `.toml` files to `~/.config/helix/themes/`. Then set in `~/.config/helix/config.toml`:
 
 ```toml
 theme = "figure5-warm-charcoal"
@@ -102,7 +104,7 @@ theme = "figure5-warm-charcoal"
 
 ### k9s
 
-Copies `.yaml` files to `~/.config/k9s/skins/`. Then set in `~/.config/k9s/config.yaml`:
+Symlinks (or copies) `.yaml` files to `~/.config/k9s/skins/`. Then set in `~/.config/k9s/config.yaml`:
 
 ```yaml
 k9s:
