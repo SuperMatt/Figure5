@@ -12,7 +12,7 @@ is red.
 | Ghostty       | Done           | `ghostty/figure5-warm-charcoal`, `ghostty/figure5-softer-warm`, `ghostty/figure5-cool` |
 | Zed           | Done           | `zed/figure5.json`                                 |
 | Slack         | Done           | `slack/figure5.txt` (paste into app)               |
-| VSCode/Cursor | Not started    |                                                    |
+| VSCode/Cursor | Done           | `vscode/package.json`, `vscode/themes/`            |
 | Helix         | Done           | `helix/figure5-{warm-charcoal,softer-warm,cool}.toml` |
 | k9s           | Done           | `k9s/figure5-{warm-charcoal,softer-warm,cool}.yaml`   |
 
@@ -67,6 +67,24 @@ Run `make zed` to install, or copy `zed/figure5.json` to `~/.config/zed/themes/`
 ```
 
 Or open the theme picker (`Ctrl+K Ctrl+T`) and search for "Figure 5".
+
+## VSCode / Cursor Usage
+
+Run `make vscode` or `make cursor` to install. The extension is always copied (not symlinked)
+to `~/.vscode/extensions/figure5-theme-1.0.0/` or `~/.cursor/extensions/figure5-theme-1.0.0/`.
+
+Then set in `settings.json`:
+
+```json
+"workbench.colorTheme": "Figure 5 – Warm Charcoal"
+// or
+"workbench.colorTheme": "Figure 5 – Softer Warm"
+// or
+"workbench.colorTheme": "Figure 5 – Cool"
+```
+
+Or open the theme picker (`Ctrl+K Ctrl+T`) and search for "Figure 5".
+Reload the window after installing (`Ctrl+Shift+P` → "Developer: Reload Window").
 
 ## Palette
 
@@ -169,12 +187,18 @@ Warm tans rather than neutral greys, keeping the palette tonally consistent. Tru
 neutral greys would feel cold and disconnected from the rest of the palette. Bumped
 slightly from the initial values (`#C0A880` / `#F5E8C0`) which were a touch too dim.
 
+### Zed command palette selection (`#5C1A1A`)
+`element.selected` and `ghost_element.selected` were bumped from `#401818` to `#5C1A1A`
+after the original value proved too close to the dark surface backgrounds, making the
+highlighted item in the command palette hard to distinguish. The brighter crimson reads
+clearly without changing the overall character of the selection colour.
+
 ## Preview Script
 
 `preview.sh` — run with `bash preview.sh warm` or `bash preview.sh cool` (or `make preview` / `make preview-cool`) to see palette swatches and a syntax sample for either variant family.
 
 ### Italics
-Removed entirely from all editor themes (Helix, Zed). Italic font rendering is
+Removed entirely from all editor themes (Helix, Zed, VSCode/Cursor). Italic font rendering is
 inconsistent across terminals and fonts, and adds visual noise without aiding
 comprehension. All tokens that were italic are now rendered in their colour alone.
 
@@ -186,3 +210,6 @@ comprehension. All tokens that were italic are now rendered in their colour alon
   brown=completed. Green is not used for status — it is unreliable for deuteranopes.
 - The palette was designed and iterated interactively in Ghostty with true-colour
   ANSI previews, so the hex values reflect what actually looked good on screen.
+- VSCode/Cursor use the same theme JSON files. The extension is installed to separate
+  directories (`~/.vscode/extensions/` vs `~/.cursor/extensions/`) but is otherwise
+  identical. Symlinks are not used as neither editor reliably picks them up.

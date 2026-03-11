@@ -2,6 +2,8 @@ GHOSTTY_THEMES_DIR := $(HOME)/.config/ghostty/themes
 ZED_THEMES_DIR     := $(HOME)/.config/zed/themes
 HELIX_THEMES_DIR   := $(HOME)/.config/helix/themes
 K9S_SKINS_DIR      := $(HOME)/.config/k9s/skins
+VSCODE_EXT_DIR     := $(HOME)/.vscode/extensions/figure5-theme-1.0.0
+CURSOR_EXT_DIR     := $(HOME)/.cursor/extensions/figure5-theme-1.0.0
 
 # Installation method: 'symlink' (default) or 'copy'
 INSTALL_METHOD ?= symlink
@@ -14,11 +16,12 @@ INSTALL    = cp
 SRC_PREFIX =
 endif
 
-.PHONY: all ghostty zed helix k9s \
+.PHONY: all ghostty zed helix k9s vscode cursor \
         uninstall-ghostty uninstall-zed uninstall-helix uninstall-k9s \
+        uninstall-vscode uninstall-cursor \
         preview preview-cool showcase screenshot
 
-all: ghostty zed helix k9s
+all: ghostty zed helix k9s vscode cursor
 
 ghostty:
 	mkdir -p $(GHOSTTY_THEMES_DIR)
@@ -42,6 +45,22 @@ k9s:
 	$(INSTALL) $(SRC_PREFIX)k9s/figure5-softer-warm.yaml $(K9S_SKINS_DIR)/figure5-softer-warm.yaml
 	$(INSTALL) $(SRC_PREFIX)k9s/figure5-cool.yaml $(K9S_SKINS_DIR)/figure5-cool.yaml
 
+# VSCode: installs as a local extension (no symlink support — always copies)
+vscode:
+	mkdir -p $(VSCODE_EXT_DIR)/themes
+	cp vscode/package.json $(VSCODE_EXT_DIR)/package.json
+	cp vscode/themes/figure5-color-theme.json $(VSCODE_EXT_DIR)/themes/figure5-color-theme.json
+	cp vscode/themes/figure5-softer-warm-color-theme.json $(VSCODE_EXT_DIR)/themes/figure5-softer-warm-color-theme.json
+	cp vscode/themes/figure5-cool-color-theme.json $(VSCODE_EXT_DIR)/themes/figure5-cool-color-theme.json
+
+# Cursor: same extension format, different extensions dir
+cursor:
+	mkdir -p $(CURSOR_EXT_DIR)/themes
+	cp vscode/package.json $(CURSOR_EXT_DIR)/package.json
+	cp vscode/themes/figure5-color-theme.json $(CURSOR_EXT_DIR)/themes/figure5-color-theme.json
+	cp vscode/themes/figure5-softer-warm-color-theme.json $(CURSOR_EXT_DIR)/themes/figure5-softer-warm-color-theme.json
+	cp vscode/themes/figure5-cool-color-theme.json $(CURSOR_EXT_DIR)/themes/figure5-cool-color-theme.json
+
 uninstall-ghostty:
 	rm -f $(GHOSTTY_THEMES_DIR)/figure5-warm-charcoal
 	rm -f $(GHOSTTY_THEMES_DIR)/figure5-softer-warm
@@ -59,6 +78,12 @@ uninstall-k9s:
 	rm -f $(K9S_SKINS_DIR)/figure5-warm-charcoal.yaml
 	rm -f $(K9S_SKINS_DIR)/figure5-softer-warm.yaml
 	rm -f $(K9S_SKINS_DIR)/figure5-cool.yaml
+
+uninstall-vscode:
+	rm -rf $(VSCODE_EXT_DIR)
+
+uninstall-cursor:
+	rm -rf $(CURSOR_EXT_DIR)
 
 preview:
 	bash preview.sh warm

@@ -21,15 +21,15 @@
         "element.background": "#00000000",
         "element.hover": "#2E2A27",
         "element.active": "#3A3530",
-        "element.selected": "#401818",
+        "element.selected": "#5C1A1A",
         "element.disabled": "#252220",
 
-        "drop_target.background": "#40181840",
+        "drop_target.background": "#5C1A1A40",
 
         "ghost_element.background": "#00000000",
-        "ghost_element.hover": "#2E2A2740",
-        "ghost_element.active": "#3A353040",
-        "ghost_element.selected": "#40181840",
+        "ghost_element.hover": "#2E2A2760",
+        "ghost_element.active": "#3A353060",
+        "ghost_element.selected": "#5C1A1A80",
         "ghost_element.disabled": "#252220",
 
         "text": "#F0E0B8",
@@ -52,7 +52,7 @@
         "tab.inactive_background": "#1A1816",
         "tab.active_background": "#1E1B19",
 
-        "search.match_background": "#401818",
+        "search.match_background": "#5C1A1A",
 
         "panel.background": "#141210",
         "panel.focused_border": "#CC2211",
@@ -76,7 +76,7 @@
         "editor.wrap_guide": "#2E2A27",
         "editor.active_wrap_guide": "#3A3530",
         "editor.document_highlight.read_background": "#3A353060",
-        "editor.document_highlight.write_background": "#40181860",
+        "editor.document_highlight.write_background": "#5C1A1A60",
 
         "terminal.background": "#1E1B19",
         "terminal.foreground": "#F0E0B8",
@@ -145,7 +145,7 @@
         "warning.border": "#FFB82060",
 
         "players": [
-          { "cursor": "#FAF0D0", "background": "#FAF0D030", "selection": "#401818", "border": "#FAF0D0" },
+          { "cursor": "#FAF0D0", "background": "#FAF0D030", "selection": "#5C1A1A", "border": "#FAF0D0" },
           { "cursor": "#4878C8", "background": "#4878C830", "selection": "#1A2840", "border": "#4878C8" },
           { "cursor": "#8ED400", "background": "#8ED40030", "selection": "#1E2E10", "border": "#8ED400" },
           { "cursor": "#E0961A", "background": "#E0961A30", "selection": "#3A2A10", "border": "#E0961A" },
@@ -217,15 +217,15 @@
         "element.background": "#00000000",
         "element.hover": "#2E2A27",
         "element.active": "#3A3530",
-        "element.selected": "#401818",
+        "element.selected": "#5C1A1A",
         "element.disabled": "#2E2A27",
 
-        "drop_target.background": "#40181840",
+        "drop_target.background": "#5C1A1A40",
 
         "ghost_element.background": "#00000000",
-        "ghost_element.hover": "#2E2A2740",
-        "ghost_element.active": "#3A353040",
-        "ghost_element.selected": "#40181840",
+        "ghost_element.hover": "#2E2A2760",
+        "ghost_element.active": "#3A353060",
+        "ghost_element.selected": "#5C1A1A80",
         "ghost_element.disabled": "#2E2A27",
 
         "text": "#F0E0B8",
@@ -248,7 +248,7 @@
         "tab.inactive_background": "#201E1C",
         "tab.active_background": "#252220",
 
-        "search.match_background": "#401818",
+        "search.match_background": "#5C1A1A",
 
         "panel.background": "#1A1816",
         "panel.focused_border": "#CC2211",
@@ -272,7 +272,7 @@
         "editor.wrap_guide": "#302C29",
         "editor.active_wrap_guide": "#3A3530",
         "editor.document_highlight.read_background": "#3A353060",
-        "editor.document_highlight.write_background": "#40181860",
+        "editor.document_highlight.write_background": "#5C1A1A60",
 
         "terminal.background": "#252220",
         "terminal.foreground": "#F0E0B8",
@@ -341,7 +341,7 @@
         "warning.border": "#FFB82060",
 
         "players": [
-          { "cursor": "#FAF0D0", "background": "#FAF0D030", "selection": "#401818", "border": "#FAF0D0" },
+          { "cursor": "#FAF0D0", "background": "#FAF0D030", "selection": "#5C1A1A", "border": "#FAF0D0" },
           { "cursor": "#4878C8", "background": "#4878C830", "selection": "#1A2840", "border": "#4878C8" },
           { "cursor": "#8ED400", "background": "#8ED40030", "selection": "#1E2E10", "border": "#8ED400" },
           { "cursor": "#E0961A", "background": "#E0961A30", "selection": "#3A2A10", "border": "#E0961A" },
@@ -413,15 +413,15 @@
         "element.background": "#00000000",
         "element.hover": "#2C2C2C",
         "element.active": "#383838",
-        "element.selected": "#401818",
+        "element.selected": "#5C1A1A",
         "element.disabled": "#242424",
 
-        "drop_target.background": "#40181840",
+        "drop_target.background": "#5C1A1A40",
 
         "ghost_element.background": "#00000000",
-        "ghost_element.hover": "#2C2C2C40",
-        "ghost_element.active": "#38383840",
-        "ghost_element.selected": "#40181840",
+        "ghost_element.hover": "#2C2C2C60",
+        "ghost_element.active": "#38383860",
+        "ghost_element.selected": "#5C1A1A80",
         "ghost_element.disabled": "#242424",
 
         "text": "#D8DDE4",
@@ -444,7 +444,7 @@
         "tab.inactive_background": "#181818",
         "tab.active_background": "#1C1C1C",
 
-        "search.match_background": "#401818",
+        "search.match_background": "#5C1A1A",
 
         "panel.background": "#141414",
         "panel.focused_border": "#CC2211",
@@ -468,7 +468,7 @@
         "editor.wrap_guide": "#2C2C2C",
         "editor.active_wrap_guide": "#383838",
         "editor.document_highlight.read_background": "#38383860",
-        "editor.document_highlight.write_background": "#40181860",
+        "editor.document_highlight.write_background": "#5C1A1A60",
 
         "terminal.background": "#1C1C1C",
         "terminal.foreground": "#D8DDE4",
@@ -537,7 +537,7 @@
         "warning.border": "#FFB82060",
 
         "players": [
-          { "cursor": "#FAF0D0", "background": "#FAF0D030", "selection": "#401818", "border": "#FAF0D0" },
+          { "cursor": "#FAF0D0", "background": "#FAF0D030", "selection": "#5C1A1A", "border": "#FAF0D0" },
           { "cursor": "#4878C8", "background": "#4878C830", "selection": "#1A2840", "border": "#4878C8" },
           { "cursor": "#8ED400", "background": "#8ED40030", "selection": "#1E2E10", "border": "#8ED400" },
           { "cursor": "#E0961A", "background": "#E0961A30", "selection": "#3A2A10", "border": "#E0961A" },

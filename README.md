@@ -64,13 +64,15 @@ make screenshot    # regenerate screenshots
 ## Installation
 
 ```sh
-make           # install everything (symlinks by default)
+make           # install everything (symlinks by default, except vscode/cursor which always copy)
 make ghostty
 make zed
 make helix
 make k9s
+make vscode
+make cursor
 
-make INSTALL_METHOD=copy   # copy files instead of symlinking
+make INSTALL_METHOD=copy   # copy files instead of symlinking (ghostty/zed/helix/k9s)
 ```
 
 ### Ghostty
@@ -111,6 +113,25 @@ k9s:
   ui:
     skin: figure5-warm-charcoal
 ```
+
+### VSCode / Cursor
+
+Copies the extension to `~/.vscode/extensions/figure5-theme-1.0.0/` (or `~/.cursor/extensions/`).
+VSCode and Cursor don't support symlinked extensions, so this always copies.
+
+```sh
+make vscode   # installs to ~/.vscode/extensions/
+make cursor   # installs to ~/.cursor/extensions/
+```
+
+Then open the theme picker (`Ctrl+K Ctrl+T`) and search for "Figure 5", or set in `settings.json`:
+
+```json
+"workbench.colorTheme": "Figure 5 – Warm Charcoal"
+// or: "Figure 5 – Softer Warm", "Figure 5 – Cool"
+```
+
+Reload the window after installing (`Ctrl+Shift+P` → "Developer: Reload Window").
 
 ### Slack
 

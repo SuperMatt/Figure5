@@ -1,0 +1,29 @@
+{
+  "name": "figure5-theme",
+  "displayName": "Figure 5",
+  "description": "Dark theme inspired by Charles Demuth's \"I Saw the Figure 5 in Gold\". Designed for red/green colour blindness.",
+  "version": "1.0.0",
+  "publisher": "figure5",
+  "engines": { "vscode": "^1.75.0" },
+  "categories": ["Themes"],
+  "keywords": ["theme", "dark", "colour-blind", "warm", "cool"],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Figure 5 – Warm Charcoal",
+        "uiTheme": "vs-dark",
+        "path": "./themes/figure5-color-theme.json"
+      },
+      {
+        "label": "Figure 5 – Softer Warm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/figure5-softer-warm-color-theme.json"
+      },
+      {
+        "label": "Figure 5 – Cool",
+        "uiTheme": "vs-dark",
+        "path": "./themes/figure5-cool-color-theme.json"
+      }
+    ]
+  }
+}
