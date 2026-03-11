@@ -68,7 +68,7 @@ dim "  ────────────────────────�
 printf "    "; swatch "$BG"       "variant"            "Background"; nl
 printf "    "; swatch "$FG"       "variant"            "Foreground"; nl
 printf "    "; swatch "$C_BWHITE"  "variant"            "Cursor"; nl
-printf "    "; swatch "64;24;20"  "#401818"            "Selection"; nl
+printf "    "; swatch "92;26;26"  "#5C1A1A"            "Selection"; nl
 nl
 
 printf "  "; gold "ANSI Colors"

@@ -97,7 +97,7 @@ Reload the window after installing (`Ctrl+Shift+P` → "Developer: Reload Window
 | Foreground (cool variant)  | `#D8DDE4` | 216, 221, 228  |
 | Cursor (warm)              | `#FAF0D0` | 250, 240, 208  |
 | Cursor (cool)              | `#E0EAF0` | 224, 234, 240  |
-| Selection                  | `#401818` | 64, 24, 24     |
+| Selection                  | `#5C1A1A` | 92, 26, 26     |
 | Black                      | `#1C0A0C` | 28, 10, 12     |
 | Bright Black               | `#8A6448` | 138, 100, 72   |
 | Red                        | `#CC2211` | 204, 34, 17    |
@@ -187,11 +187,11 @@ Warm tans rather than neutral greys, keeping the palette tonally consistent. Tru
 neutral greys would feel cold and disconnected from the rest of the palette. Bumped
 slightly from the initial values (`#C0A880` / `#F5E8C0`) which were a touch too dim.
 
-### Zed command palette selection (`#5C1A1A`)
-`element.selected` and `ghost_element.selected` were bumped from `#401818` to `#5C1A1A`
-after the original value proved too close to the dark surface backgrounds, making the
-highlighted item in the command palette hard to distinguish. The brighter crimson reads
-clearly without changing the overall character of the selection colour.
+### Selection colour (`#5C1A1A`)
+The selection background was bumped from `#401818` to `#5C1A1A` across all themes
+after the original value proved too close to the dark surface backgrounds, making
+selected items hard to distinguish. The brighter crimson reads clearly without
+changing the overall character of the selection colour.
 
 ## Preview Script
 

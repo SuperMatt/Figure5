@@ -24,7 +24,7 @@ The warm and cool variants share all accent colours. Only the background and whi
 |---|---|
 | Foreground (warm) | `#F0E0B8` |
 | Foreground (cool) | `#D8DDE4` |
-| Selection | `#401818` |
+| Selection | `#5C1A1A` |
 | Black / Bright Black | `#1C0A0C` / `#8A6448` |
 | Red / Bright Red | `#CC2211` / `#FF3322` |
 | Green / Bright Green | `#6CB200` / `#8ED400` |

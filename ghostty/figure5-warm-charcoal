@@ -1,7 +1,7 @@
 background = #1E1B19
 foreground = #F0E0B8
 cursor-color = #FAF0D0
-selection-background = #401818
+selection-background = #5C1A1A
 selection-foreground = #F0E0B8
 
 # Black / Bright Black (used for comments)

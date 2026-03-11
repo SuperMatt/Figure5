@@ -187,7 +187,7 @@ bg_dark      = "#1A1816"
 bg_surface   = "#2E2A27"
 bg_highlight = "#2E2A27"
 border       = "#3A3530"
-selection    = "#401818"
+selection    = "#5C1A1A"
 
 fg           = "#F0E0B8"
 text_muted   = "#CDBA90"
