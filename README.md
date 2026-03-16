@@ -27,7 +27,7 @@ The warm and cool variants share all accent colours. Only the background and whi
 | Selection | `#5C1A1A` |
 | Black / Bright Black | `#1C0A0C` / `#8A6448` |
 | Red / Bright Red | `#CC2211` / `#FF3322` |
-| Green / Bright Green | `#6CB200` / `#8ED400` |
+| Green / Bright Green | `#78BE00` / `#98DE00` |
 | Yellow / Bright Yellow | `#E0961A` / `#FFB820` |
 | Blue / Bright Blue | `#4878C8` / `#5080D0` |
 | Magenta / Bright Magenta | `#B84078` / `#C04880` |

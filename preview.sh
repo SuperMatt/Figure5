@@ -20,7 +20,7 @@ fi
 
 C_BLACK="28;10;12";      C_BBLACK="138;100;72"
 C_RED="204;34;17";       C_BRED="255;51;34"
-C_GREEN="108;178;0";     C_BGREEN="142;212;0"
+C_GREEN="120;190;0";     C_BGREEN="152;222;0"
 C_YELLOW="224;150;26";   C_BYELLOW="255;184;32"
 C_BLUE="72;120;200";     C_BBLUE="80;128;208"
 C_MAGENTA="184;64;120";  C_BMAGENTA="192;72;128"
@@ -76,7 +76,7 @@ f "100;70;40"; printf "                          standard → bright"; r; nl
 dim "  ─────────────────────────────────────────────────────────────────"; nl
 pair_row "Black"   "#1C0A0C" "$C_BLACK"   "Bright Black"   "#8A6448"  "$C_BBLACK"
 pair_row "Red ♥"   "#CC2211" "$C_RED"     "Bright Red"     "#FF3322"  "$C_BRED"
-pair_row "Green"   "#6CB200" "$C_GREEN"   "Bright Green"   "#8ED400"  "$C_BGREEN"
+pair_row "Green"   "#78BE00" "$C_GREEN"   "Bright Green"   "#98DE00"  "$C_BGREEN"
 pair_row "Yellow"  "#E0961A" "$C_YELLOW"  "Bright Yellow"  "#FFB820"  "$C_BYELLOW"
 pair_row "Blue"    "#4878C8" "$C_BLUE"    "Bright Blue"    "#5080D0"  "$C_BBLUE"
 pair_row "Magenta" "#B84078" "$C_MAGENTA" "Bright Magenta" "#C04880"  "$C_BMAGENTA"

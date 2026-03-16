@@ -102,8 +102,8 @@ Reload the window after installing (`Ctrl+Shift+P` → "Developer: Reload Window
 | Bright Black               | `#8A6448` | 138, 100, 72   |
 | Red                        | `#CC2211` | 204, 34, 17    |
 | Bright Red                 | `#FF3322` | 255, 51, 34    |
-| Green                      | `#6CB200` | 108, 178, 0    |
-| Bright Green               | `#8ED400` | 142, 212, 0    |
+| Green                      | `#78BE00` | 120, 190, 0    |
+| Bright Green               | `#98DE00` | 152, 222, 0    |
 | Yellow                     | `#E0961A` | 224, 150, 26   |
 | Bright Yellow              | `#FFB820` | 255, 184, 32   |
 | Blue                       | `#4878C8` | 72, 120, 200   |
@@ -157,7 +157,7 @@ Kept close to the painting's crimson. Vivid and saturated so it stays legible as
 an accent even for a colour-blind viewer (who sees red as brownish — high saturation
 helps it remain distinct from other warm tones by luminance alone).
 
-### Green (`#6CB200` / `#8ED400`)
+### Green (`#78BE00` / `#98DE00`)
 The trickiest colour for a red-green colour-blind user. Pure greens are indistinguishable
 from reds for deuteranopes. These greens sit at ~85° hue (yellow-green), which is
 distinguishable from red by both hue angle and luminance. They were initially too far

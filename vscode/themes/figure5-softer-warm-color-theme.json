@@ -36,11 +36,11 @@
     "editorOverviewRuler.selectionHighlightForeground": "#5C1A1A",
     "editorOverviewRuler.findMatchForeground":  "#E0961A80",
     "editorOverviewRuler.modifiedForeground":   "#E0961A",
-    "editorOverviewRuler.addedForeground":      "#8ED400",
+    "editorOverviewRuler.addedForeground":      "#98DE00",
     "editorOverviewRuler.deletedForeground":    "#FF3322",
 
     "editorGutter.background":                  "#252220",
-    "editorGutter.addedBackground":             "#8ED400",
+    "editorGutter.addedBackground":             "#98DE00",
     "editorGutter.modifiedBackground":          "#E0961A",
     "editorGutter.deletedBackground":           "#FF3322",
 
@@ -60,9 +60,9 @@
     "editorInlayHint.background":               "#1E1B1900",
 
     // ── Diff editor ────────────────────────────────────────────────────
-    "diffEditor.insertedTextBackground":        "#8ED40018",
+    "diffEditor.insertedTextBackground":        "#98DE0018",
     "diffEditor.removedTextBackground":         "#FF332218",
-    "diffEditor.insertedLineBackground":        "#8ED40010",
+    "diffEditor.insertedLineBackground":        "#98DE0010",
     "diffEditor.removedLineBackground":         "#FF332210",
     "diffEditor.diagonalFill":                  "#3A3530",
 
@@ -173,8 +173,8 @@
     "terminal.ansiBrightBlack":                 "#8A6448",
     "terminal.ansiRed":                         "#CC2211",
     "terminal.ansiBrightRed":                   "#FF3322",
-    "terminal.ansiGreen":                       "#6CB200",
-    "terminal.ansiBrightGreen":                 "#8ED400",
+    "terminal.ansiGreen":                       "#78BE00",
+    "terminal.ansiBrightGreen":                 "#98DE00",
     "terminal.ansiYellow":                      "#E0961A",
     "terminal.ansiBrightYellow":                "#FFB820",
     "terminal.ansiBlue":                        "#4878C8",
@@ -267,10 +267,10 @@
     "peekViewTitleLabel.foreground":            "#E0961A",
 
     // ── Git decorations ────────────────────────────────────────────────
-    "gitDecoration.addedResourceForeground":    "#8ED400",
+    "gitDecoration.addedResourceForeground":    "#98DE00",
     "gitDecoration.modifiedResourceForeground": "#E0961A",
     "gitDecoration.deletedResourceForeground":  "#FF3322",
-    "gitDecoration.untrackedResourceForeground":"#8ED400",
+    "gitDecoration.untrackedResourceForeground":"#98DE00",
     "gitDecoration.ignoredResourceForeground":  "#8A6448",
     "gitDecoration.conflictingResourceForeground": "#FFB820",
     "gitDecoration.submoduleResourceForeground":"#68A8B8",
@@ -309,7 +309,7 @@
     "debugConsole.sourceForeground":            "#CDBA90",
     "debugConsoleInputIcon.foreground":         "#CC2211",
     "editor.stackFrameHighlightBackground":     "#E0961A20",
-    "editor.focusedStackFrameHighlightBackground": "#8ED40020",
+    "editor.focusedStackFrameHighlightBackground": "#98DE0020",
 
     // ── Misc ───────────────────────────────────────────────────────────
     "focusBorder":                              "#CC221180",
@@ -324,7 +324,7 @@
     "textBlockQuote.background":                "#252220",
     "textBlockQuote.border":                    "#CC2211",
     "textCodeBlock.background":                 "#252220",
-    "textPreformat.foreground":                 "#6CB200",
+    "textPreformat.foreground":                 "#78BE00",
     "textSeparator.foreground":                 "#3A3530",
     "symbolIcon.arrayForeground":               "#F0E0B8",
     "symbolIcon.booleanForeground":             "#FFB820",
@@ -353,7 +353,7 @@
     "symbolIcon.propertyForeground":            "#68A8B8",
     "symbolIcon.referenceForeground":           "#F0E0B8",
     "symbolIcon.snippetForeground":             "#F0E0B8",
-    "symbolIcon.stringForeground":              "#6CB200",
+    "symbolIcon.stringForeground":              "#78BE00",
     "symbolIcon.structForeground":              "#5A90A0",
     "symbolIcon.textForeground":                "#F0E0B8",
     "symbolIcon.typeParameterForeground":       "#5A90A0",
@@ -382,9 +382,9 @@
     "keyword":                  "#B84078",
     "modifier":                 "#B84078",
     "comment":                  "#8A6448",
-    "string":                   "#6CB200",
+    "string":                   "#78BE00",
     "number":                   "#FFB820",
-    "regexp":                   "#8ED400",
+    "regexp":                   "#98DE00",
     "operator":                 "#CDBA90",
     "decorator":                "#E0961A",
     "label":                    "#E0961A",
@@ -403,12 +403,12 @@
     {
       "name": "String",
       "scope": ["string", "string.quoted", "string.template"],
-      "settings": { "foreground": "#6CB200" }
+      "settings": { "foreground": "#78BE00" }
     },
     {
       "name": "String escape / regexp",
       "scope": ["constant.character.escape", "string.regexp", "string.regexp.character-class"],
-      "settings": { "foreground": "#8ED400" }
+      "settings": { "foreground": "#98DE00" }
     },
     {
       "name": "Number",
@@ -551,7 +551,7 @@
     {
       "name": "CSS value",
       "scope": ["support.constant.property-value.css"],
-      "settings": { "foreground": "#6CB200" }
+      "settings": { "foreground": "#78BE00" }
     },
     {
       "name": "CSS pseudo-class / pseudo-element",
@@ -601,7 +601,7 @@
     {
       "name": "Markdown inline code",
       "scope": ["markup.inline.raw.string.markdown"],
-      "settings": { "foreground": "#6CB200" }
+      "settings": { "foreground": "#78BE00" }
     },
     {
       "name": "Markdown link",
