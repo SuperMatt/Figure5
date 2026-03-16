@@ -87,7 +87,7 @@ k9s:
     yaml:
       keyColor: "#E0961A"
       colonColor: "#CDBA90"
-      valueColor: "#78BE00"
+      valueColor: "#84CC00"
 
     logs:
       fgColor: "#FAF0D0"

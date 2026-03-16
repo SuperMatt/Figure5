@@ -24,7 +24,7 @@ esac
 
 C_BLACK="28;10;12";     C_BBLACK="138;100;72"
 C_RED="204;34;17";      C_BRED="255;51;34"
-C_GREEN="120;190;0";    C_BGREEN="152;222;0"
+C_GREEN="132;204;0";    C_BGREEN="120;224;0"
 C_YELLOW="224;150;26";  C_BYELLOW="255;184;32"
 C_BLUE="72;120;200";    C_BBLUE="80;128;208"
 C_MAGENTA="184;64;120"; C_BMAGENTA="192;72;128"
@@ -78,7 +78,7 @@ pair_row() {
 
 pair_row "$C_BLACK"   "Black"   "#1C0A0C"  "$C_BBLACK"   "Br Black"   "#8A6448"
 pair_row "$C_RED"     "Red"     "#CC2211"  "$C_BRED"     "Br Red"     "#FF3322"
-pair_row "$C_GREEN"   "Green"   "#78BE00"  "$C_BGREEN"   "Br Green"   "#98DE00"
+pair_row "$C_GREEN"   "Green"   "#84CC00"  "$C_BGREEN"   "Br Green"   "#78E000"
 pair_row "$C_YELLOW"  "Yellow"  "#E0961A"  "$C_BYELLOW"  "Br Yellow"  "#FFB820"
 pair_row "$C_BLUE"    "Blue"    "#4878C8"  "$C_BBLUE"    "Br Blue"    "#5080D0"
 pair_row "$C_MAGENTA" "Magenta" "#B84078"  "$C_BMAGENTA" "Br Magenta" "#C04880"
