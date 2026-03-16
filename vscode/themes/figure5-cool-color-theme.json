@@ -173,7 +173,7 @@
     "terminal.ansiBrightBlack":                 "#8A6448",
     "terminal.ansiRed":                         "#CC2211",
     "terminal.ansiBrightRed":                   "#FF3322",
-    "terminal.ansiGreen":                       "#84CC00",
+    "terminal.ansiGreen":                       "#6CB200",
     "terminal.ansiBrightGreen":                 "#78E000",
     "terminal.ansiYellow":                      "#E0961A",
     "terminal.ansiBrightYellow":                "#FFB820",
@@ -324,7 +324,7 @@
     "textBlockQuote.background":                "#252220",
     "textBlockQuote.border":                    "#CC2211",
     "textCodeBlock.background":                 "#252220",
-    "textPreformat.foreground":                 "#84CC00",
+    "textPreformat.foreground":                 "#6CB200",
     "textSeparator.foreground":                 "#3A3530",
     "symbolIcon.arrayForeground":               "#F0E0B8",
     "symbolIcon.booleanForeground":             "#FFB820",
@@ -353,7 +353,7 @@
     "symbolIcon.propertyForeground":            "#68A8B8",
     "symbolIcon.referenceForeground":           "#F0E0B8",
     "symbolIcon.snippetForeground":             "#F0E0B8",
-    "symbolIcon.stringForeground":              "#84CC00",
+    "symbolIcon.stringForeground":              "#6CB200",
     "symbolIcon.structForeground":              "#5A90A0",
     "symbolIcon.textForeground":                "#F0E0B8",
     "symbolIcon.typeParameterForeground":       "#5A90A0",
@@ -382,7 +382,7 @@
     "keyword":                  "#B84078",
     "modifier":                 "#B84078",
     "comment":                  "#8A6448",
-    "string":                   "#84CC00",
+    "string":                   "#6CB200",
     "number":                   "#FFB820",
     "regexp":                   "#78E000",
     "operator":                 "#CDBA90",
@@ -403,7 +403,7 @@
     {
       "name": "String",
       "scope": ["string", "string.quoted", "string.template"],
-      "settings": { "foreground": "#84CC00" }
+      "settings": { "foreground": "#6CB200" }
     },
     {
       "name": "String escape / regexp",
@@ -551,7 +551,7 @@
     {
       "name": "CSS value",
       "scope": ["support.constant.property-value.css"],
-      "settings": { "foreground": "#84CC00" }
+      "settings": { "foreground": "#6CB200" }
     },
     {
       "name": "CSS pseudo-class / pseudo-element",
@@ -601,7 +601,7 @@
     {
       "name": "Markdown inline code",
       "scope": ["markup.inline.raw.string.markdown"],
-      "settings": { "foreground": "#84CC00" }
+      "settings": { "foreground": "#6CB200" }
     },
     {
       "name": "Markdown link",

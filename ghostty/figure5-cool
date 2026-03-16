@@ -13,7 +13,7 @@ palette = 1=#CC2211
 palette = 9=#FF3322
 
 # Green / Bright Green (shifted yellow-green for red-green colour blindness)
-palette = 2=#84CC00
+palette = 2=#6CB200
 palette = 10=#78E000
 
 # Yellow / Bright Yellow (amber gold — the "5 in Gold")
