@@ -1,0 +1,108 @@
+// Figure 5 – Zellij Web Client Browser Theme
+// Inspired by Charles Demuth's "I Saw the Figure 5 in Gold" (1928)
+//
+// This configures the ANSI colour palette used by the Zellij web client
+// (browser terminal). It is NOT a standalone file — paste the web_client
+// block you want into your ~/.config/zellij/config.kdl.
+//
+// Usage:
+//   zellij web --create-token   (first time only)
+//   zellij web                  (starts the server)
+//
+// Three variants are provided below. Uncomment the one you want.
+
+// ─── Figure 5 – Warm Charcoal ────────────────────────────────────────────────
+// Background: #1E1B19 — very dark warm charcoal
+
+web_client {
+    theme {
+        background        30  27  25   // #1E1B19 – warm charcoal
+        foreground       240 224 184   // #F0E0B8 – warm parchment
+        black             28  10  12   // #1C0A0C
+        red              204  34  17   // #CC2211
+        green            108 178   0   // #6CB200 – yellow-green (~85° hue)
+        yellow           224 150  26   // #E0961A – gold
+        blue              72 120 200   // #4878C8
+        magenta          184  64 120   // #B84078
+        cyan              90 144 160   // #5A90A0
+        white            205 186 144   // #CDBA90 – warm tan
+        bright_black     138 100  72   // #8A6448 – warm brown (comments/dim)
+        bright_red       255  51  34   // #FF3322
+        bright_green     120 224   0   // #78E000
+        bright_yellow    255 184  32   // #FFB820
+        bright_blue       80 128 208   // #5080D0
+        bright_magenta   192  72 128   // #C04880
+        bright_cyan      104 168 184   // #68A8B8
+        bright_white     250 240 208   // #FAF0D0
+        cursor           250 240 208   // #FAF0D0 – bright white for max contrast
+        cursor_accent     28  10  12   // #1C0A0C – black under cursor
+        selection_background          92  26  26   // #5C1A1A – crimson
+        selection_foreground         250 240 208   // #FAF0D0
+        selection_inactive_background 46  13  13   // #2E0D0D – darker crimson
+    }
+}
+
+
+// ─── Figure 5 – Softer Warm ──────────────────────────────────────────────────
+// Background: #252220 — slightly lighter, warmest variant
+// (identical to warm-charcoal except background)
+
+// web_client {
+//     theme {
+//         background        37  34  32   // #252220 – softer warm
+//         foreground       240 224 184   // #F0E0B8
+//         black             28  10  12   // #1C0A0C
+//         red              204  34  17   // #CC2211
+//         green            108 178   0   // #6CB200
+//         yellow           224 150  26   // #E0961A
+//         blue              72 120 200   // #4878C8
+//         magenta          184  64 120   // #B84078
+//         cyan              90 144 160   // #5A90A0
+//         white            205 186 144   // #CDBA90
+//         bright_black     138 100  72   // #8A6448
+//         bright_red       255  51  34   // #FF3322
+//         bright_green     120 224   0   // #78E000
+//         bright_yellow    255 184  32   // #FFB820
+//         bright_blue       80 128 208   // #5080D0
+//         bright_magenta   192  72 128   // #C04880
+//         bright_cyan      104 168 184   // #68A8B8
+//         bright_white     250 240 208   // #FAF0D0
+//         cursor           250 240 208   // #FAF0D0
+//         cursor_accent     28  10  12   // #1C0A0C
+//         selection_background          92  26  26   // #5C1A1A
+//         selection_foreground         250 240 208   // #FAF0D0
+//         selection_inactive_background 46  13  13   // #2E0D0D
+//     }
+// }
+
+
+// ─── Figure 5 – Cool ─────────────────────────────────────────────────────────
+// Background: #1C1C1C — pure neutral dark, cool blue-grey whites
+
+// web_client {
+//     theme {
+//         background        28  28  28   // #1C1C1C – neutral dark
+//         foreground       216 221 228   // #D8DDE4 – cool blue-grey
+//         black             28  10  12   // #1C0A0C
+//         red              204  34  17   // #CC2211
+//         green            108 178   0   // #6CB200
+//         yellow           224 150  26   // #E0961A
+//         blue              72 120 200   // #4878C8
+//         magenta          184  64 120   // #B84078
+//         cyan              90 144 160   // #5A90A0
+//         white            196 206 216   // #C4CED8 – cool grey
+//         bright_black     138 100  72   // #8A6448
+//         bright_red       255  51  34   // #FF3322
+//         bright_green     120 224   0   // #78E000
+//         bright_yellow    255 184  32   // #FFB820
+//         bright_blue       80 128 208   // #5080D0
+//         bright_magenta   192  72 128   // #C04880
+//         bright_cyan      104 168 184   // #68A8B8
+//         bright_white     224 234 240   // #E0EAF0 – cool bright white
+//         cursor           224 234 240   // #E0EAF0
+//         cursor_accent     28  10  12   // #1C0A0C
+//         selection_background          92  26  26   // #5C1A1A
+//         selection_foreground         224 234 240   // #E0EAF0
+//         selection_inactive_background 46  13  13   // #2E0D0D
+//     }
+// }

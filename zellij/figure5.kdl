@@ -1,0 +1,401 @@
+// Figure 5 – Zellij UI Theme
+// Inspired by Charles Demuth's "I Saw the Figure 5 in Gold" (1928)
+// Three variants: warm-charcoal, softer-warm, cool
+//
+// Install: copy or symlink this file to ~/.config/zellij/themes/figure5.kdl
+// Then add to ~/.config/zellij/config.kdl:
+//   theme "figure5-warm-charcoal"
+//   // or: figure5-softer-warm, figure5-cool
+
+themes {
+
+    // ─── Figure 5 – Warm Charcoal ────────────────────────────────────────────
+    // Background: #1E1B19 (30 27 25) — very dark warm charcoal
+
+    "figure5-warm-charcoal" {
+        text_unselected {
+            base       240 224 184   // foreground – warm parchment
+            background  30  27  25   // background
+            emphasis_0 224 150  26   // yellow – gold accent
+            emphasis_1  72 120 200   // blue
+            emphasis_2 184  64 120   // magenta
+            emphasis_3  90 144 160   // cyan
+        }
+        text_selected {
+            base       250 240 208   // bright white
+            background  92  26  26   // selection – crimson
+            emphasis_0 255 184  32   // bright yellow
+            emphasis_1  80 128 208   // bright blue
+            emphasis_2 192  72 128   // bright magenta
+            emphasis_3 104 168 184   // bright cyan
+        }
+        ribbon_unselected {
+            base       205 186 144   // white/tan
+            background  28  10  12   // black
+            emphasis_0 224 150  26   // yellow
+            emphasis_1  72 120 200   // blue
+            emphasis_2 184  64 120   // magenta
+            emphasis_3 138 100  72   // bright black / warm brown
+        }
+        ribbon_selected {
+            base        28  10  12   // black – text on red
+            background 204  34  17   // red – hero colour
+            emphasis_0 255 184  32   // bright yellow
+            emphasis_1 250 240 208   // bright white
+            emphasis_2 255  51  34   // bright red
+            emphasis_3 224 150  26   // yellow
+        }
+        frame_unselected {
+            base       138 100  72   // bright black – dim border
+            background  30  27  25   // background
+            emphasis_0 205 186 144   // white/tan
+            emphasis_1  72 120 200   // blue
+            emphasis_2 184  64 120   // magenta
+            emphasis_3  90 144 160   // cyan
+        }
+        frame_selected {
+            base       204  34  17   // red – active pane border
+            background  30  27  25   // background
+            emphasis_0 255 184  32   // bright yellow
+            emphasis_1 240 224 184   // foreground
+            emphasis_2 255  51  34   // bright red
+            emphasis_3 224 150  26   // yellow
+        }
+        frame_highlight {
+            base       255 184  32   // bright yellow
+            background  30  27  25   // background
+            emphasis_0 255  51  34   // bright red
+            emphasis_1 250 240 208   // bright white
+            emphasis_2 224 150  26   // yellow
+            emphasis_3 204  34  17   // red
+        }
+        table_title {
+            base       255 184  32   // bright yellow
+            background  30  27  25   // background
+            emphasis_0 224 150  26   // yellow
+            emphasis_1 240 224 184   // foreground
+            emphasis_2  72 120 200   // blue
+            emphasis_3 138 100  72   // bright black
+        }
+        table_cell_unselected {
+            base       240 224 184   // foreground
+            background  30  27  25   // background
+            emphasis_0 224 150  26   // yellow
+            emphasis_1  72 120 200   // blue
+            emphasis_2 184  64 120   // magenta
+            emphasis_3 138 100  72   // bright black
+        }
+        table_cell_selected {
+            base        28  10  12   // black
+            background 204  34  17   // red
+            emphasis_0 255 184  32   // bright yellow
+            emphasis_1 250 240 208   // bright white
+            emphasis_2 224 150  26   // yellow
+            emphasis_3 255  51  34   // bright red
+        }
+        list_unselected {
+            base       240 224 184   // foreground
+            background  30  27  25   // background
+            emphasis_0 224 150  26   // yellow
+            emphasis_1  72 120 200   // blue
+            emphasis_2 184  64 120   // magenta
+            emphasis_3 138 100  72   // bright black
+        }
+        list_selected {
+            base        28  10  12   // black
+            background 204  34  17   // red
+            emphasis_0 255 184  32   // bright yellow
+            emphasis_1 250 240 208   // bright white
+            emphasis_2 224 150  26   // yellow
+            emphasis_3 255  51  34   // bright red
+        }
+        exit_code_success {
+            base       108 178   0   // green
+            background  30  27  25   // background
+            emphasis_0 120 224   0   // bright green
+            emphasis_1 240 224 184   // foreground
+            emphasis_2 224 150  26   // yellow
+            emphasis_3 138 100  72   // bright black
+        }
+        exit_code_error {
+            base       204  34  17   // red
+            background  30  27  25   // background
+            emphasis_0 255  51  34   // bright red
+            emphasis_1 240 224 184   // foreground
+            emphasis_2 224 150  26   // yellow
+            emphasis_3 138 100  72   // bright black
+        }
+        multiplayer_user_colors {
+            player_1  204  34  17   // red
+            player_2   72 120 200   // blue
+            player_3  224 150  26   // yellow
+            player_4  184  64 120   // magenta
+            player_5   90 144 160   // cyan
+            player_6  255  51  34   // bright red
+            player_7   80 128 208   // bright blue
+            player_8  255 184  32   // bright yellow
+            player_9  192  72 128   // bright magenta
+            player_10 104 168 184   // bright cyan
+        }
+    }
+
+    // ─── Figure 5 – Softer Warm ──────────────────────────────────────────────
+    // Background: #252220 (37 34 32) — slightly lighter, warmest variant
+
+    "figure5-softer-warm" {
+        text_unselected {
+            base       240 224 184   // foreground – warm parchment
+            background  37  34  32   // background
+            emphasis_0 224 150  26   // yellow – gold accent
+            emphasis_1  72 120 200   // blue
+            emphasis_2 184  64 120   // magenta
+            emphasis_3  90 144 160   // cyan
+        }
+        text_selected {
+            base       250 240 208   // bright white
+            background  92  26  26   // selection – crimson
+            emphasis_0 255 184  32   // bright yellow
+            emphasis_1  80 128 208   // bright blue
+            emphasis_2 192  72 128   // bright magenta
+            emphasis_3 104 168 184   // bright cyan
+        }
+        ribbon_unselected {
+            base       205 186 144   // white/tan
+            background  28  10  12   // black
+            emphasis_0 224 150  26   // yellow
+            emphasis_1  72 120 200   // blue
+            emphasis_2 184  64 120   // magenta
+            emphasis_3 138 100  72   // bright black / warm brown
+        }
+        ribbon_selected {
+            base        28  10  12   // black – text on red
+            background 204  34  17   // red – hero colour
+            emphasis_0 255 184  32   // bright yellow
+            emphasis_1 250 240 208   // bright white
+            emphasis_2 255  51  34   // bright red
+            emphasis_3 224 150  26   // yellow
+        }
+        frame_unselected {
+            base       138 100  72   // bright black – dim border
+            background  37  34  32   // background
+            emphasis_0 205 186 144   // white/tan
+            emphasis_1  72 120 200   // blue
+            emphasis_2 184  64 120   // magenta
+            emphasis_3  90 144 160   // cyan
+        }
+        frame_selected {
+            base       204  34  17   // red – active pane border
+            background  37  34  32   // background
+            emphasis_0 255 184  32   // bright yellow
+            emphasis_1 240 224 184   // foreground
+            emphasis_2 255  51  34   // bright red
+            emphasis_3 224 150  26   // yellow
+        }
+        frame_highlight {
+            base       255 184  32   // bright yellow
+            background  37  34  32   // background
+            emphasis_0 255  51  34   // bright red
+            emphasis_1 250 240 208   // bright white
+            emphasis_2 224 150  26   // yellow
+            emphasis_3 204  34  17   // red
+        }
+        table_title {
+            base       255 184  32   // bright yellow
+            background  37  34  32   // background
+            emphasis_0 224 150  26   // yellow
+            emphasis_1 240 224 184   // foreground
+            emphasis_2  72 120 200   // blue
+            emphasis_3 138 100  72   // bright black
+        }
+        table_cell_unselected {
+            base       240 224 184   // foreground
+            background  37  34  32   // background
+            emphasis_0 224 150  26   // yellow
+            emphasis_1  72 120 200   // blue
+            emphasis_2 184  64 120   // magenta
+            emphasis_3 138 100  72   // bright black
+        }
+        table_cell_selected {
+            base        28  10  12   // black
+            background 204  34  17   // red
+            emphasis_0 255 184  32   // bright yellow
+            emphasis_1 250 240 208   // bright white
+            emphasis_2 224 150  26   // yellow
+            emphasis_3 255  51  34   // bright red
+        }
+        list_unselected {
+            base       240 224 184   // foreground
+            background  37  34  32   // background
+            emphasis_0 224 150  26   // yellow
+            emphasis_1  72 120 200   // blue
+            emphasis_2 184  64 120   // magenta
+            emphasis_3 138 100  72   // bright black
+        }
+        list_selected {
+            base        28  10  12   // black
+            background 204  34  17   // red
+            emphasis_0 255 184  32   // bright yellow
+            emphasis_1 250 240 208   // bright white
+            emphasis_2 224 150  26   // yellow
+            emphasis_3 255  51  34   // bright red
+        }
+        exit_code_success {
+            base       108 178   0   // green
+            background  37  34  32   // background
+            emphasis_0 120 224   0   // bright green
+            emphasis_1 240 224 184   // foreground
+            emphasis_2 224 150  26   // yellow
+            emphasis_3 138 100  72   // bright black
+        }
+        exit_code_error {
+            base       204  34  17   // red
+            background  37  34  32   // background
+            emphasis_0 255  51  34   // bright red
+            emphasis_1 240 224 184   // foreground
+            emphasis_2 224 150  26   // yellow
+            emphasis_3 138 100  72   // bright black
+        }
+        multiplayer_user_colors {
+            player_1  204  34  17   // red
+            player_2   72 120 200   // blue
+            player_3  224 150  26   // yellow
+            player_4  184  64 120   // magenta
+            player_5   90 144 160   // cyan
+            player_6  255  51  34   // bright red
+            player_7   80 128 208   // bright blue
+            player_8  255 184  32   // bright yellow
+            player_9  192  72 128   // bright magenta
+            player_10 104 168 184   // bright cyan
+        }
+    }
+
+    // ─── Figure 5 – Cool ─────────────────────────────────────────────────────
+    // Background: #1C1C1C (28 28 28) — pure neutral dark, cool blue-grey whites
+
+    "figure5-cool" {
+        text_unselected {
+            base       216 221 228   // foreground – cool blue-grey
+            background  28  28  28   // background
+            emphasis_0 224 150  26   // yellow – gold accent
+            emphasis_1  72 120 200   // blue
+            emphasis_2 184  64 120   // magenta
+            emphasis_3  90 144 160   // cyan
+        }
+        text_selected {
+            base       224 234 240   // bright white – cool
+            background  92  26  26   // selection – crimson
+            emphasis_0 255 184  32   // bright yellow
+            emphasis_1  80 128 208   // bright blue
+            emphasis_2 192  72 128   // bright magenta
+            emphasis_3 104 168 184   // bright cyan
+        }
+        ribbon_unselected {
+            base       196 206 216   // white – cool
+            background  28  10  12   // black
+            emphasis_0 224 150  26   // yellow
+            emphasis_1  72 120 200   // blue
+            emphasis_2 184  64 120   // magenta
+            emphasis_3 138 100  72   // bright black / warm brown
+        }
+        ribbon_selected {
+            base        28  10  12   // black – text on red
+            background 204  34  17   // red – hero colour
+            emphasis_0 255 184  32   // bright yellow
+            emphasis_1 224 234 240   // bright white – cool
+            emphasis_2 255  51  34   // bright red
+            emphasis_3 224 150  26   // yellow
+        }
+        frame_unselected {
+            base       138 100  72   // bright black – dim border
+            background  28  28  28   // background
+            emphasis_0 196 206 216   // white – cool
+            emphasis_1  72 120 200   // blue
+            emphasis_2 184  64 120   // magenta
+            emphasis_3  90 144 160   // cyan
+        }
+        frame_selected {
+            base       204  34  17   // red – active pane border
+            background  28  28  28   // background
+            emphasis_0 255 184  32   // bright yellow
+            emphasis_1 216 221 228   // foreground
+            emphasis_2 255  51  34   // bright red
+            emphasis_3 224 150  26   // yellow
+        }
+        frame_highlight {
+            base       255 184  32   // bright yellow
+            background  28  28  28   // background
+            emphasis_0 255  51  34   // bright red
+            emphasis_1 224 234 240   // bright white – cool
+            emphasis_2 224 150  26   // yellow
+            emphasis_3 204  34  17   // red
+        }
+        table_title {
+            base       255 184  32   // bright yellow
+            background  28  28  28   // background
+            emphasis_0 224 150  26   // yellow
+            emphasis_1 216 221 228   // foreground
+            emphasis_2  72 120 200   // blue
+            emphasis_3 138 100  72   // bright black
+        }
+        table_cell_unselected {
+            base       216 221 228   // foreground
+            background  28  28  28   // background
+            emphasis_0 224 150  26   // yellow
+            emphasis_1  72 120 200   // blue
+            emphasis_2 184  64 120   // magenta
+            emphasis_3 138 100  72   // bright black
+        }
+        table_cell_selected {
+            base        28  10  12   // black
+            background 204  34  17   // red
+            emphasis_0 255 184  32   // bright yellow
+            emphasis_1 224 234 240   // bright white – cool
+            emphasis_2 224 150  26   // yellow
+            emphasis_3 255  51  34   // bright red
+        }
+        list_unselected {
+            base       216 221 228   // foreground
+            background  28  28  28   // background
+            emphasis_0 224 150  26   // yellow
+            emphasis_1  72 120 200   // blue
+            emphasis_2 184  64 120   // magenta
+            emphasis_3 138 100  72   // bright black
+        }
+        list_selected {
+            base        28  10  12   // black
+            background 204  34  17   // red
+            emphasis_0 255 184  32   // bright yellow
+            emphasis_1 224 234 240   // bright white – cool
+            emphasis_2 224 150  26   // yellow
+            emphasis_3 255  51  34   // bright red
+        }
+        exit_code_success {
+            base       108 178   0   // green
+            background  28  28  28   // background
+            emphasis_0 120 224   0   // bright green
+            emphasis_1 216 221 228   // foreground
+            emphasis_2 224 150  26   // yellow
+            emphasis_3 138 100  72   // bright black
+        }
+        exit_code_error {
+            base       204  34  17   // red
+            background  28  28  28   // background
+            emphasis_0 255  51  34   // bright red
+            emphasis_1 216 221 228   // foreground
+            emphasis_2 224 150  26   // yellow
+            emphasis_3 138 100  72   // bright black
+        }
+        multiplayer_user_colors {
+            player_1  204  34  17   // red
+            player_2   72 120 200   // blue
+            player_3  224 150  26   // yellow
+            player_4  184  64 120   // magenta
+            player_5   90 144 160   // cyan
+            player_6  255  51  34   // bright red
+            player_7   80 128 208   // bright blue
+            player_8  255 184  32   // bright yellow
+            player_9  192  72 128   // bright magenta
+            player_10 104 168 184   // bright cyan
+        }
+    }
+}

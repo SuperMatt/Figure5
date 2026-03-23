@@ -15,6 +15,7 @@ is red.
 | VSCode/Cursor | Done           | `vscode/package.json`, `vscode/themes/`            |
 | Helix         | Done           | `helix/figure5-{warm-charcoal,softer-warm,cool}.toml` |
 | k9s           | Done           | `k9s/figure5-{warm-charcoal,softer-warm,cool}.yaml`   |
+| Zellij        | Done           | `zellij/figure5.kdl` (UI theme), `zellij/figure5-web.kdl` (web client) |
 
 ## Ghostty Usage
 
@@ -48,6 +49,17 @@ k9s:
   ui:
     skin: figure5-warm-charcoal
 ```
+
+## Zellij Usage
+
+Run `make zellij` to install the UI theme, or copy `zellij/figure5.kdl` to `~/.config/zellij/themes/`. Then set in `~/.config/zellij/config.kdl`:
+
+```kdl
+theme "figure5-warm-charcoal"
+// or: figure5-softer-warm, figure5-cool
+```
+
+For the **web client browser theme**, paste the relevant `web_client { ... }` block from `zellij/figure5-web.kdl` into your `~/.config/zellij/config.kdl`. Three variants are provided; warm-charcoal is active by default and the others are commented out.
 
 ## Slack Usage
 

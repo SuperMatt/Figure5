@@ -2,6 +2,7 @@ GHOSTTY_THEMES_DIR := $(HOME)/.config/ghostty/themes
 ZED_THEMES_DIR     := $(HOME)/.config/zed/themes
 HELIX_THEMES_DIR   := $(HOME)/.config/helix/themes
 K9S_SKINS_DIR      := $(HOME)/.config/k9s/skins
+ZELLIJ_THEMES_DIR  := $(HOME)/.config/zellij/themes
 VSCODE_EXT_DIR     := $(HOME)/.vscode/extensions/figure5-theme-1.0.0
 CURSOR_EXT_DIR     := $(HOME)/.cursor/extensions/figure5-theme-1.0.0
 
@@ -16,12 +17,12 @@ INSTALL    = cp
 SRC_PREFIX =
 endif
 
-.PHONY: all ghostty zed helix k9s vscode cursor \
+.PHONY: all ghostty zed helix k9s zellij vscode cursor \
         uninstall-ghostty uninstall-zed uninstall-helix uninstall-k9s \
-        uninstall-vscode uninstall-cursor \
+        uninstall-zellij uninstall-vscode uninstall-cursor \
         preview preview-cool showcase screenshot
 
-all: ghostty zed helix k9s vscode cursor
+all: ghostty zed helix k9s zellij vscode cursor
 
 ghostty:
 	mkdir -p $(GHOSTTY_THEMES_DIR)
@@ -44,6 +45,12 @@ k9s:
 	$(INSTALL) $(SRC_PREFIX)k9s/figure5-warm-charcoal.yaml $(K9S_SKINS_DIR)/figure5-warm-charcoal.yaml
 	$(INSTALL) $(SRC_PREFIX)k9s/figure5-softer-warm.yaml $(K9S_SKINS_DIR)/figure5-softer-warm.yaml
 	$(INSTALL) $(SRC_PREFIX)k9s/figure5-cool.yaml $(K9S_SKINS_DIR)/figure5-cool.yaml
+
+# Zellij: installs UI theme to ~/.config/zellij/themes/
+# The web client theme (figure5-web.kdl) must be pasted into config.kdl manually.
+zellij:
+	mkdir -p $(ZELLIJ_THEMES_DIR)
+	$(INSTALL) $(SRC_PREFIX)zellij/figure5.kdl $(ZELLIJ_THEMES_DIR)/figure5.kdl
 
 # VSCode: installs as a local extension (no symlink support — always copies)
 vscode:
@@ -78,6 +85,9 @@ uninstall-k9s:
 	rm -f $(K9S_SKINS_DIR)/figure5-warm-charcoal.yaml
 	rm -f $(K9S_SKINS_DIR)/figure5-softer-warm.yaml
 	rm -f $(K9S_SKINS_DIR)/figure5-cool.yaml
+
+uninstall-zellij:
+	rm -f $(ZELLIJ_THEMES_DIR)/figure5.kdl
 
 uninstall-vscode:
 	rm -rf $(VSCODE_EXT_DIR)
