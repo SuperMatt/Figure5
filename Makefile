@@ -3,6 +3,7 @@ ZED_THEMES_DIR     := $(HOME)/.config/zed/themes
 HELIX_THEMES_DIR   := $(HOME)/.config/helix/themes
 K9S_SKINS_DIR      := $(HOME)/.config/k9s/skins
 ZELLIJ_THEMES_DIR  := $(HOME)/.config/zellij/themes
+FRESH_THEMES_DIR   := $(HOME)/.config/fresh/themes
 VSCODE_EXT_DIR     := $(HOME)/.vscode/extensions/figure5-theme-1.0.0
 CURSOR_EXT_DIR     := $(HOME)/.cursor/extensions/figure5-theme-1.0.0
 
@@ -17,12 +18,12 @@ INSTALL    = cp
 SRC_PREFIX =
 endif
 
-.PHONY: all ghostty zed helix k9s zellij vscode cursor \
+.PHONY: all ghostty zed helix k9s zellij fresh vscode cursor \
         uninstall-ghostty uninstall-zed uninstall-helix uninstall-k9s \
-        uninstall-zellij uninstall-vscode uninstall-cursor \
+        uninstall-zellij uninstall-fresh uninstall-vscode uninstall-cursor \
         preview preview-cool showcase screenshot
 
-all: ghostty zed helix k9s zellij vscode cursor
+all: ghostty zed helix k9s zellij fresh vscode cursor
 
 ghostty:
 	mkdir -p $(GHOSTTY_THEMES_DIR)
@@ -51,6 +52,13 @@ k9s:
 zellij:
 	mkdir -p $(ZELLIJ_THEMES_DIR)
 	$(INSTALL) $(SRC_PREFIX)zellij/figure5.kdl $(ZELLIJ_THEMES_DIR)/figure5.kdl
+
+# Fresh: installs theme JSON files to ~/.config/fresh/themes/
+fresh:
+	mkdir -p $(FRESH_THEMES_DIR)
+	$(INSTALL) $(SRC_PREFIX)fresh/figure5-warm-charcoal.json $(FRESH_THEMES_DIR)/figure5-warm-charcoal.json
+	$(INSTALL) $(SRC_PREFIX)fresh/figure5-softer-warm.json $(FRESH_THEMES_DIR)/figure5-softer-warm.json
+	$(INSTALL) $(SRC_PREFIX)fresh/figure5-cool.json $(FRESH_THEMES_DIR)/figure5-cool.json
 
 # VSCode: installs as a local extension (no symlink support — always copies)
 vscode:
@@ -88,6 +96,11 @@ uninstall-k9s:
 
 uninstall-zellij:
 	rm -f $(ZELLIJ_THEMES_DIR)/figure5.kdl
+
+uninstall-fresh:
+	rm -f $(FRESH_THEMES_DIR)/figure5-warm-charcoal.json
+	rm -f $(FRESH_THEMES_DIR)/figure5-softer-warm.json
+	rm -f $(FRESH_THEMES_DIR)/figure5-cool.json
 
 uninstall-vscode:
 	rm -rf $(VSCODE_EXT_DIR)

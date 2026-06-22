@@ -69,10 +69,11 @@ make ghostty
 make zed
 make helix
 make k9s
+make fresh
 make vscode
 make cursor
 
-make INSTALL_METHOD=copy   # copy files instead of symlinking (ghostty/zed/helix/k9s)
+make INSTALL_METHOD=copy   # copy files instead of symlinking (ghostty/zed/helix/k9s/fresh)
 ```
 
 ### Ghostty
@@ -112,6 +113,17 @@ Symlinks (or copies) `.yaml` files to `~/.config/k9s/skins/`. Then set in `~/.co
 k9s:
   ui:
     skin: figure5-warm-charcoal
+```
+
+### Fresh
+
+Symlinks (or copies) `.json` files to `~/.config/fresh/themes/`. Then select via the
+command palette (`Ctrl+P` → "Select Theme"), or set the `theme` field in
+`~/.config/fresh/config.json`:
+
+```jsonc
+{ "theme": "figure5-warm-charcoal.json" }
+// or: "figure5-softer-warm.json", "figure5-cool.json"
 ```
 
 ### VSCode / Cursor

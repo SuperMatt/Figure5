@@ -16,6 +16,7 @@ is red.
 | Helix         | Done           | `helix/figure5-{warm-charcoal,softer-warm,cool}.toml` |
 | k9s           | Done           | `k9s/figure5-{warm-charcoal,softer-warm,cool}.yaml`   |
 | Zellij        | Done           | `zellij/figure5.kdl` (UI theme), `zellij/figure5-web.kdl` (web client) |
+| Fresh         | Done           | `fresh/figure5-{warm-charcoal,softer-warm,cool}.json` |
 
 ## Ghostty Usage
 
@@ -60,6 +61,23 @@ theme "figure5-warm-charcoal"
 ```
 
 For the **web client browser theme**, paste the relevant `web_client { ... }` block from `zellij/figure5-web.kdl` into your `~/.config/zellij/config.kdl`. Three variants are provided; warm-charcoal is active by default and the others are commented out.
+
+## Fresh Usage
+
+Run `make fresh` to install, or copy the `.json` files to `~/.config/fresh/themes/`. Then
+select via the command palette (`Ctrl+P` → "Select Theme"), or set the `theme` field in
+`~/.config/fresh/config.json`:
+
+```jsonc
+{ "theme": "figure5-warm-charcoal.json" }
+// or: "figure5-softer-warm.json", "figure5-cool.json"
+```
+
+Themes are validated against Fresh's schema (`crates/fresh-editor/plugins/schemas/theme.schema.json`
+in the [sinelaw/fresh](https://github.com/sinelaw/fresh) repo). They are full themes — every
+`editor`, `ui`, `search`, `diagnostic`, and `syntax` colour key is set explicitly rather than
+inherited from a base. The syntax mapping mirrors the Helix theme (keyword=magenta, function=blue,
+string=green, type=cyan, constant=bright_magenta, comment=bright_black).
 
 ## Slack Usage
 
