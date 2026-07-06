@@ -116,7 +116,7 @@ Reload the window after installing (`Ctrl+Shift+P` → "Developer: Reload Window
 | Bright Red                 | `#FF3322` | 255, 51, 34    |
 | Green                      | `#6CB200` | 108, 178, 0    |
 | Bright Green               | `#78E000` | 120, 224, 0    |
-| Yellow                     | `#E0B41A` | 224, 180, 26   |
+| Yellow                     | `#E0CC1A` | 224, 204, 26   |
 | Bright Yellow              | `#FFD420` | 255, 212, 32   |
 | Blue                       | `#4878C8` | 72, 120, 200   |
 | Bright Blue                | `#5080D0` | 80, 128, 208   |
@@ -176,12 +176,14 @@ distinguishable from red by both hue angle and luminance. They were initially to
 toward yellow/gold and iterated toward more genuine green while keeping them off pure
 spectral green.
 
-### Yellow (`#E0B41A` / `#FFD420`)
+### Yellow (`#E0CC1A` / `#FFD420`)
 Directly from the painting's gold numeral. A warm yellow-gold — pulled off the
-original orange-amber (`#E0961A` / `#FFB820`) toward yellow (raising the green
-channel, hue ~38° → ~47°) after the amber read as too orange, while staying warm
-and rich rather than a cold lemon. This is the "hero" accent colour of the palette
-alongside red.
+original orange-amber (`#E0961A` / `#FFB820`) toward yellow by raising the green
+channel, after the amber read as too orange. The two were tuned separately: an
+intermediate `#E0B41A` (~47°) still read too orange for the normal weight, so it
+was pushed further to `#E0CC1A` (~54°); the brighter, higher-luminance `#FFD420`
+(~48°) reads clearly yellow without going as far. Both stay warm and rich rather
+than a cold lemon. This is the "hero" accent colour of the palette alongside red.
 
 ### Blue (`#4878C8` / `#5080D0`)
 A cool counterpoint to the warm reds and golds. Taken from the cool atmospheric depth

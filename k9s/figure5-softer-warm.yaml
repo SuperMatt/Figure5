@@ -9,10 +9,10 @@ k9s:
   prompt:
     fgColor: "#FAF0D0"
     bgColor: "#252220"
-    suggestColor: "#E0B41A"
+    suggestColor: "#E0CC1A"
 
   info:
-    fgColor: "#E0B41A"
+    fgColor: "#E0CC1A"
     bgColor: "#252220"
 
   dialog:
@@ -22,7 +22,7 @@ k9s:
     buttonBgColor: "#CC2211"
     buttonFocusFgColor: "#252220"
     buttonFocusBgColor: "#FF3322"
-    labelFgColor: "#E0B41A"
+    labelFgColor: "#E0CC1A"
     fieldFgColor: "#FAF0D0"
 
   frame:
@@ -32,17 +32,17 @@ k9s:
 
     menu:
       fgColor: "#FAF0D0"
-      keyColor: "#E0B41A"
+      keyColor: "#E0CC1A"
       numKeyColor: "#CC2211"
 
     crumbs:
       fgColor: "#252220"
-      bgColor: "#E0B41A"
+      bgColor: "#E0CC1A"
       activeColor: "#CC2211"
 
     status:
       newColor: "#FAF0D0"
-      modifyColor: "#E0B41A"
+      modifyColor: "#E0CC1A"
       addColor: "#FAF0D0"
       errorColor: "#FF3322"
       highlightColor: "#FFD420"
@@ -52,7 +52,7 @@ k9s:
     title:
       fgColor: "#FAF0D0"
       bgColor: "#252220"
-      highlightColor: "#E0B41A"
+      highlightColor: "#E0CC1A"
       counterColor: "#CC2211"
       filterColor: "#5A90A0"
 
@@ -71,9 +71,9 @@ k9s:
       bgColor: "#252220"
       cursorFgColor: "#252220"
       cursorBgColor: "#CC2211"
-      markColor: "#E0B41A"
+      markColor: "#E0CC1A"
       header:
-        fgColor: "#E0B41A"
+        fgColor: "#E0CC1A"
         bgColor: "#252220"
         sorterColor: "#CC2211"
 
@@ -81,11 +81,11 @@ k9s:
       fgColor: "#FAF0D0"
       bgColor: "#252220"
       cursorColor: "#CC2211"
-      graphicColor: "#E0B41A"
+      graphicColor: "#E0CC1A"
       showIcons: false
 
     yaml:
-      keyColor: "#E0B41A"
+      keyColor: "#E0CC1A"
       colonColor: "#CDBA90"
       valueColor: "#6CB200"
 
@@ -99,18 +99,18 @@ k9s:
     help:
       fgColor: "#FAF0D0"
       bgColor: "#252220"
-      keyColor: "#E0B41A"
+      keyColor: "#E0CC1A"
       numKeyColor: "#CC2211"
       sectionColor: "#FAF0D0"
 
     filter:
       fgColor: "#FAF0D0"
       bgColor: "#252220"
-      highlightColor: "#E0B41A"
+      highlightColor: "#E0CC1A"
 
     dump:
       fgColor: "#FAF0D0"
       bgColor: "#252220"
       header:
-        fgColor: "#E0B41A"
+        fgColor: "#E0CC1A"
         bgColor: "#252220"

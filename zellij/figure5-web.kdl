@@ -21,7 +21,7 @@ web_client {
         black             28  10  12   // #1C0A0C
         red              204  34  17   // #CC2211
         green            108 178   0   // #6CB200 – yellow-green (~85° hue)
-        yellow           224 150  26   // #E0B41A – gold
+        yellow           224 150  26   // #E0CC1A – gold
         blue              72 120 200   // #4878C8
         magenta          184  64 120   // #B84078
         cyan              90 144 160   // #5A90A0
@@ -54,7 +54,7 @@ web_client {
 //         black             28  10  12   // #1C0A0C
 //         red              204  34  17   // #CC2211
 //         green            108 178   0   // #6CB200
-//         yellow           224 150  26   // #E0B41A
+//         yellow           224 150  26   // #E0CC1A
 //         blue              72 120 200   // #4878C8
 //         magenta          184  64 120   // #B84078
 //         cyan              90 144 160   // #5A90A0
@@ -86,7 +86,7 @@ web_client {
 //         black             28  10  12   // #1C0A0C
 //         red              204  34  17   // #CC2211
 //         green            108 178   0   // #6CB200
-//         yellow           224 150  26   // #E0B41A
+//         yellow           224 150  26   // #E0CC1A
 //         blue              72 120 200   // #4878C8
 //         magenta          184  64 120   // #B84078
 //         cyan              90 144 160   // #5A90A0
