@@ -95,10 +95,11 @@ Selecting a theme stores `custom:figure5-warm-charcoal` (etc.) as your preferenc
 `~/.claude/settings.json`. Claude Code watches `~/.claude/themes/` and hot-reloads on
 save, so edits apply without restarting.
 
-Each file is `{ "name", "base", "overrides" }`. All three use `base: "dark-daltonized"`
-(Claude Code's colour-blind-friendly preset) so any token not listed still falls through
-to a daltonized-safe default. The `overrides` map the Figure 5 palette onto Claude Code's
-colour tokens; see the [token reference](https://code.claude.com/docs/en/terminal-config#color-token-reference).
+Each file is `{ "name", "base", "overrides" }`. All three use `base: "dark"` so any token
+not listed falls through to the standard dark preset. The Figure 5 palette is already
+designed around this user's colour blindness, so Claude Code's own `dark-daltonized`
+preset is not used — it desaturated the result and looked off. The `overrides` map the
+Figure 5 palette onto Claude Code's colour tokens; see the [token reference](https://code.claude.com/docs/en/terminal-config#color-token-reference).
 
 Note: Claude Code does not set the terminal background — that comes from your terminal's
 own colour scheme (pair it with the matching Ghostty variant). The theme controls Claude
@@ -280,8 +281,9 @@ comprehension. All tokens that were italic are now rendered in their colour alon
   figure 5 in gold" — with its shimmer at bright yellow. Red is reserved exclusively for
   `error`, so red never means anything but danger; `warning` uses amber `#E0961A` and
   `success` the yellow-green `#6CB200`, keeping the three status colours separable by hue
-  and luminance for a deuteranope. Base is `dark-daltonized` so unlisted tokens (rainbow
-  gradient, onboarding accents) stay colour-blind-safe. Diff backgrounds keep the
+  and luminance for a deuteranope. Base is `dark` (Claude Code's `dark-daltonized` preset
+  was tried but desaturated the palette and looked off — the palette already handles the
+  colour blindness itself). Diff backgrounds keep the
   green-add / red-remove convention but are tuned dark olive vs dark crimson to hold the
   luminance/hue gap. The eight `*_FOR_SUBAGENTS_ONLY` colours are mapped so parallel
   agents stay distinguishable.

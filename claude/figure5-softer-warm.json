@@ -1,6 +1,6 @@
 {
   "name": "Figure 5 – Softer Warm",
-  "base": "dark-daltonized",
+  "base": "dark",
   "overrides": {
     "claude": "#E0CC1A",
     "claudeShimmer": "#FFD420",
