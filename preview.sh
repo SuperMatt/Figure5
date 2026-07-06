@@ -77,7 +77,7 @@ dim "  ────────────────────────�
 pair_row "Black"   "#1C0A0C" "$C_BLACK"   "Bright Black"   "#8A6448"  "$C_BBLACK"
 pair_row "Red ♥"   "#CC2211" "$C_RED"     "Bright Red"     "#FF3322"  "$C_BRED"
 pair_row "Green"   "#6CB200" "$C_GREEN"   "Bright Green"   "#78E000"  "$C_BGREEN"
-pair_row "Yellow"  "#E0961A" "$C_YELLOW"  "Bright Yellow"  "#FFB820"  "$C_BYELLOW"
+pair_row "Yellow"  "#E0B41A" "$C_YELLOW"  "Bright Yellow"  "#FFD420"  "$C_BYELLOW"
 pair_row "Blue"    "#4878C8" "$C_BLUE"    "Bright Blue"    "#5080D0"  "$C_BBLUE"
 pair_row "Magenta" "#B84078" "$C_MAGENTA" "Bright Magenta" "#C04880"  "$C_BMAGENTA"
 pair_row "Cyan"    "#5A90A0" "$C_CYAN"    "Bright Cyan"    "#68A8B8"  "$C_BCYAN"

@@ -79,7 +79,7 @@ pair_row() {
 pair_row "$C_BLACK"   "Black"   "#1C0A0C"  "$C_BBLACK"   "Br Black"   "#8A6448"
 pair_row "$C_RED"     "Red"     "#CC2211"  "$C_BRED"     "Br Red"     "#FF3322"
 pair_row "$C_GREEN"   "Green"   "#6CB200"  "$C_BGREEN"   "Br Green"   "#78E000"
-pair_row "$C_YELLOW"  "Yellow"  "#E0961A"  "$C_BYELLOW"  "Br Yellow"  "#FFB820"
+pair_row "$C_YELLOW"  "Yellow"  "#E0B41A"  "$C_BYELLOW"  "Br Yellow"  "#FFD420"
 pair_row "$C_BLUE"    "Blue"    "#4878C8"  "$C_BBLUE"    "Br Blue"    "#5080D0"
 pair_row "$C_MAGENTA" "Magenta" "#B84078"  "$C_BMAGENTA" "Br Magenta" "#C04880"
 pair_row "$C_CYAN"    "Cyan"    "#5A90A0"  "$C_BCYAN"    "Br Cyan"    "#68A8B8"
