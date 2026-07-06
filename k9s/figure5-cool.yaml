@@ -9,10 +9,10 @@ k9s:
   prompt:
     fgColor: "#E0EAF0"
     bgColor: "#1C1C1C"
-    suggestColor: "#E0961A"
+    suggestColor: "#E0CC1A"
 
   info:
-    fgColor: "#E0961A"
+    fgColor: "#E0CC1A"
     bgColor: "#1C1C1C"
 
   dialog:
@@ -22,7 +22,7 @@ k9s:
     buttonBgColor: "#CC2211"
     buttonFocusFgColor: "#1C1C1C"
     buttonFocusBgColor: "#FF3322"
-    labelFgColor: "#E0961A"
+    labelFgColor: "#E0CC1A"
     fieldFgColor: "#E0EAF0"
 
   frame:
@@ -32,27 +32,27 @@ k9s:
 
     menu:
       fgColor: "#E0EAF0"
-      keyColor: "#E0961A"
+      keyColor: "#E0CC1A"
       numKeyColor: "#CC2211"
 
     crumbs:
       fgColor: "#1C1C1C"
-      bgColor: "#E0961A"
+      bgColor: "#E0CC1A"
       activeColor: "#CC2211"
 
     status:
       newColor: "#E0EAF0"
-      modifyColor: "#E0961A"
+      modifyColor: "#E0CC1A"
       addColor: "#E0EAF0"
       errorColor: "#FF3322"
-      highlightColor: "#FFB820"
+      highlightColor: "#FFD420"
       killColor: "#CC2211"
       completedColor: "#8A6448"
 
     title:
       fgColor: "#E0EAF0"
       bgColor: "#1C1C1C"
-      highlightColor: "#E0961A"
+      highlightColor: "#E0CC1A"
       counterColor: "#CC2211"
       filterColor: "#5A90A0"
 
@@ -71,9 +71,9 @@ k9s:
       bgColor: "#1C1C1C"
       cursorFgColor: "#1C1C1C"
       cursorBgColor: "#CC2211"
-      markColor: "#E0961A"
+      markColor: "#E0CC1A"
       header:
-        fgColor: "#E0961A"
+        fgColor: "#E0CC1A"
         bgColor: "#1C1C1C"
         sorterColor: "#CC2211"
 
@@ -81,11 +81,11 @@ k9s:
       fgColor: "#E0EAF0"
       bgColor: "#1C1C1C"
       cursorColor: "#CC2211"
-      graphicColor: "#E0961A"
+      graphicColor: "#E0CC1A"
       showIcons: false
 
     yaml:
-      keyColor: "#E0961A"
+      keyColor: "#E0CC1A"
       colonColor: "#C4CED8"
       valueColor: "#6CB200"
 
@@ -99,18 +99,18 @@ k9s:
     help:
       fgColor: "#E0EAF0"
       bgColor: "#1C1C1C"
-      keyColor: "#E0961A"
+      keyColor: "#E0CC1A"
       numKeyColor: "#CC2211"
       sectionColor: "#E0EAF0"
 
     filter:
       fgColor: "#E0EAF0"
       bgColor: "#1C1C1C"
-      highlightColor: "#E0961A"
+      highlightColor: "#E0CC1A"
 
     dump:
       fgColor: "#E0EAF0"
       bgColor: "#1C1C1C"
       header:
-        fgColor: "#E0961A"
+        fgColor: "#E0CC1A"
         bgColor: "#1C1C1C"

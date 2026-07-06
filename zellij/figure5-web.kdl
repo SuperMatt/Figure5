@@ -21,7 +21,7 @@ web_client {
         black             28  10  12   // #1C0A0C
         red              204  34  17   // #CC2211
         green            108 178   0   // #6CB200 – yellow-green (~85° hue)
-        yellow           224 150  26   // #E0961A – gold
+        yellow           224 150  26   // #E0CC1A – gold
         blue              72 120 200   // #4878C8
         magenta          184  64 120   // #B84078
         cyan              90 144 160   // #5A90A0
@@ -29,7 +29,7 @@ web_client {
         bright_black     138 100  72   // #8A6448 – warm brown (comments/dim)
         bright_red       255  51  34   // #FF3322
         bright_green     120 224   0   // #78E000
-        bright_yellow    255 184  32   // #FFB820
+        bright_yellow    255 184  32   // #FFD420
         bright_blue       80 128 208   // #5080D0
         bright_magenta   192  72 128   // #C04880
         bright_cyan      104 168 184   // #68A8B8
@@ -54,7 +54,7 @@ web_client {
 //         black             28  10  12   // #1C0A0C
 //         red              204  34  17   // #CC2211
 //         green            108 178   0   // #6CB200
-//         yellow           224 150  26   // #E0961A
+//         yellow           224 150  26   // #E0CC1A
 //         blue              72 120 200   // #4878C8
 //         magenta          184  64 120   // #B84078
 //         cyan              90 144 160   // #5A90A0
@@ -62,7 +62,7 @@ web_client {
 //         bright_black     138 100  72   // #8A6448
 //         bright_red       255  51  34   // #FF3322
 //         bright_green     120 224   0   // #78E000
-//         bright_yellow    255 184  32   // #FFB820
+//         bright_yellow    255 184  32   // #FFD420
 //         bright_blue       80 128 208   // #5080D0
 //         bright_magenta   192  72 128   // #C04880
 //         bright_cyan      104 168 184   // #68A8B8
@@ -86,7 +86,7 @@ web_client {
 //         black             28  10  12   // #1C0A0C
 //         red              204  34  17   // #CC2211
 //         green            108 178   0   // #6CB200
-//         yellow           224 150  26   // #E0961A
+//         yellow           224 150  26   // #E0CC1A
 //         blue              72 120 200   // #4878C8
 //         magenta          184  64 120   // #B84078
 //         cyan              90 144 160   // #5A90A0
@@ -94,7 +94,7 @@ web_client {
 //         bright_black     138 100  72   // #8A6448
 //         bright_red       255  51  34   // #FF3322
 //         bright_green     120 224   0   // #78E000
-//         bright_yellow    255 184  32   // #FFB820
+//         bright_yellow    255 184  32   // #FFD420
 //         bright_blue       80 128 208   // #5080D0
 //         bright_magenta   192  72 128   // #C04880
 //         bright_cyan      104 168 184   // #68A8B8
