@@ -1,0 +1,60 @@
+{
+  "name": "Figure 5 – Softer Warm",
+  "base": "dark-daltonized",
+  "overrides": {
+    "claude": "#E0CC1A",
+    "claudeShimmer": "#FFD420",
+    "text": "#F0E0B8",
+    "inverseText": "#252220",
+    "inactive": "#8A6448",
+    "inactiveShimmer": "#A67A58",
+    "subtle": "#5A4130",
+    "suggestion": "#CDBA90",
+    "permission": "#5080D0",
+    "permissionShimmer": "#6E9CE0",
+    "remember": "#C04880",
+
+    "success": "#6CB200",
+    "error": "#FF3322",
+    "warning": "#E0961A",
+    "warningShimmer": "#FFB820",
+    "merged": "#C04880",
+
+    "promptBorder": "#8A6448",
+    "promptBorderShimmer": "#CDBA90",
+    "planMode": "#4878C8",
+    "autoAccept": "#6CB200",
+    "bashBorder": "#C04880",
+    "ide": "#5080D0",
+    "fastMode": "#68A8B8",
+    "fastModeShimmer": "#8FC6D2",
+
+    "diffAdded": "#2A3D0A",
+    "diffRemoved": "#4A1618",
+    "diffAddedDimmed": "#1C2708",
+    "diffRemovedDimmed": "#301012",
+    "diffAddedWord": "#40590F",
+    "diffRemovedWord": "#6E1E20",
+
+    "userMessageBackground": "#2E2A26",
+    "userMessageBackgroundHover": "#363029",
+    "messageActionsBackground": "#3B342D",
+    "bashMessageBackgroundColor": "#302825",
+    "memoryBackgroundColor": "#302632",
+    "selectionBg": "#5C1A1A",
+
+    "rate_limit_fill": "#E0CC1A",
+    "rate_limit_empty": "#423A32",
+    "briefLabelYou": "#CDBA90",
+    "briefLabelClaude": "#E0CC1A",
+
+    "red_FOR_SUBAGENTS_ONLY": "#FF3322",
+    "blue_FOR_SUBAGENTS_ONLY": "#5080D0",
+    "green_FOR_SUBAGENTS_ONLY": "#78E000",
+    "yellow_FOR_SUBAGENTS_ONLY": "#FFD420",
+    "purple_FOR_SUBAGENTS_ONLY": "#8A6CC8",
+    "orange_FOR_SUBAGENTS_ONLY": "#E0961A",
+    "pink_FOR_SUBAGENTS_ONLY": "#C04880",
+    "cyan_FOR_SUBAGENTS_ONLY": "#68A8B8"
+  }
+}
