@@ -69,10 +69,12 @@ make ghostty
 make zed
 make helix
 make k9s
+make zellij
+make claude
 make vscode
 make cursor
 
-make INSTALL_METHOD=copy   # copy files instead of symlinking (ghostty/zed/helix/k9s)
+make INSTALL_METHOD=copy   # copy files instead of symlinking (ghostty/zed/helix/k9s/zellij/claude)
 ```
 
 ### Ghostty
@@ -113,6 +115,20 @@ k9s:
   ui:
     skin: figure5-warm-charcoal
 ```
+
+### Claude Code
+
+Symlinks (or copies) the `.json` themes to `~/.claude/themes/` (requires Claude Code
+v2.1.118+). Then pick one with the `/theme` command or the `/config` picker:
+
+```
+/theme
+# choose "Figure 5 – Warm Charcoal", "Figure 5 – Softer Warm", or "Figure 5 – Cool"
+```
+
+Claude Code hot-reloads on save, so edits apply without a restart. The theme colours
+Claude Code's own UI (spinner, status, diffs, mode borders); the terminal background
+comes from your terminal's colour scheme, so pair it with the matching Ghostty variant.
 
 ### VSCode / Cursor
 
