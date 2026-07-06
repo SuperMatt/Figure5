@@ -21,7 +21,7 @@ fi
 C_BLACK="28;10;12";      C_BBLACK="138;100;72"
 C_RED="204;34;17";       C_BRED="255;51;34"
 C_GREEN="108;178;0";     C_BGREEN="120;224;0"
-C_YELLOW="224;150;26";   C_BYELLOW="255;184;32"
+C_YELLOW="224;180;26";   C_BYELLOW="255;212;32"
 C_BLUE="72;120;200";     C_BBLUE="80;128;208"
 C_MAGENTA="184;64;120";  C_BMAGENTA="192;72;128"
 C_CYAN="90;144;160";     C_BCYAN="104;168;184"
@@ -45,21 +45,21 @@ pair_row() {
   nl
 }
 
-gold() { f "224;150;26"; printf "$*"; r; }
+gold() { f "224;180;26"; printf "$*"; r; }
 dim()  { f "100;70;40";  printf "$*"; r; }
 
 nl
-b "$BG"; f "224;150;26"
+b "$BG"; f "224;180;26"
 printf "  ═══════════════════════════════════════════════════════════════  "
 r; nl
 b "$BG"; f "$FG"
 printf "     I SAW THE FIGURE "
-b "$BG"; f "255;184;32"; printf "  5  "
+b "$BG"; f "255;212;32"; printf "  5  "
 b "$BG"; f "$FG"; printf " IN GOLD"
-f "224;150;26"; printf "   ·   "
+f "224;180;26"; printf "   ·   "
 f "$FG"; printf "%s    " "$VARIANT"
 r; nl
-b "$BG"; f "224;150;26"
+b "$BG"; f "224;180;26"
 printf "  ═══════════════════════════════════════════════════════════════  "
 r; nl; nl
 
