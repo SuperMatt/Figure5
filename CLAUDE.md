@@ -17,6 +17,7 @@ is red.
 | k9s           | Done           | `k9s/figure5-{warm-charcoal,softer-warm,cool}.yaml`   |
 | Zellij        | Done           | `zellij/figure5.kdl` (UI theme), `zellij/figure5-web.kdl` (web client) |
 | Fresh         | Done           | `fresh/figure5-{warm-charcoal,softer-warm,cool}.json` |
+| Claude Code   | Done           | `claude/figure5-{warm-charcoal,softer-warm,cool}.json` |
 
 ## Ghostty Usage
 
@@ -78,6 +79,31 @@ in the [sinelaw/fresh](https://github.com/sinelaw/fresh) repo). They are full th
 `editor`, `ui`, `search`, `diagnostic`, and `syntax` colour key is set explicitly rather than
 inherited from a base. The syntax mapping mirrors the Helix theme (keyword=magenta, function=blue,
 string=green, type=cyan, constant=bright_magenta, comment=bright_black).
+
+## Claude Code Usage
+
+Requires Claude Code v2.1.118 or later. Run `make claude` to install, or copy the
+`.json` files to `~/.claude/themes/`. Then pick the theme with the `/theme` command
+(or the picker in `/config`) — it lists custom themes alongside the built-in presets.
+
+```
+/theme
+# choose "Figure 5 – Warm Charcoal", "Figure 5 – Softer Warm", or "Figure 5 – Cool"
+```
+
+Selecting a theme stores `custom:figure5-warm-charcoal` (etc.) as your preference in
+`~/.claude/settings.json`. Claude Code watches `~/.claude/themes/` and hot-reloads on
+save, so edits apply without restarting.
+
+Each file is `{ "name", "base", "overrides" }`. All three use `base: "dark-daltonized"`
+(Claude Code's colour-blind-friendly preset) so any token not listed still falls through
+to a daltonized-safe default. The `overrides` map the Figure 5 palette onto Claude Code's
+colour tokens; see the [token reference](https://code.claude.com/docs/en/terminal-config#color-token-reference).
+
+Note: Claude Code does not set the terminal background — that comes from your terminal's
+own colour scheme (pair it with the matching Ghostty variant). The theme controls Claude
+Code's own UI colours: the spinner/assistant accent, status colours, diff backgrounds,
+mode borders, and (in fullscreen mode) message backgrounds.
 
 ## Slack Usage
 
@@ -248,3 +274,14 @@ comprehension. All tokens that were italic are now rendered in their colour alon
 - VSCode/Cursor use the same theme JSON files. The extension is installed to separate
   directories (`~/.vscode/extensions/` vs `~/.cursor/extensions/`) but is otherwise
   identical. Symlinks are not used as neither editor reliably picks them up.
+- Claude Code: the theme only overrides Claude Code's own UI tokens, not the terminal
+  background (which the terminal's colour scheme owns — pair with the Ghostty variant).
+  Token mapping: `claude` (spinner/assistant accent) = gold `#E0CC1A` — literally "the
+  figure 5 in gold" — with its shimmer at bright yellow. Red is reserved exclusively for
+  `error`, so red never means anything but danger; `warning` uses amber `#E0961A` and
+  `success` the yellow-green `#6CB200`, keeping the three status colours separable by hue
+  and luminance for a deuteranope. Base is `dark-daltonized` so unlisted tokens (rainbow
+  gradient, onboarding accents) stay colour-blind-safe. Diff backgrounds keep the
+  green-add / red-remove convention but are tuned dark olive vs dark crimson to hold the
+  luminance/hue gap. The eight `*_FOR_SUBAGENTS_ONLY` colours are mapped so parallel
+  agents stay distinguishable.
