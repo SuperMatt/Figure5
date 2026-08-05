@@ -1,0 +1,24 @@
+# Figure 5 – Warm Charcoal (herdr theme)
+# Paste this into ~/.config/herdr/config.toml, replacing any existing [theme] section.
+
+[theme]
+name = "terminal"
+auto_switch = false
+
+[theme.custom]
+accent = "#E0CC1A"
+panel_bg = "#1E1B19"
+surface0 = "#2A2623"
+surface1 = "#35302C"
+surface_dim = "#151210"
+overlay0 = "#3D3732"
+overlay1 = "#4A433D"
+text = "#F0E0B8"
+subtext0 = "#CDBA90"
+mauve = "#B84078"
+green = "#6CB200"
+yellow = "#E0CC1A"
+red = "#CC2211"
+blue = "#4878C8"
+teal = "#5A90A0"
+peach = "#FFD420"

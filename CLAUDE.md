@@ -18,6 +18,7 @@ is red.
 | Zellij        | Done           | `zellij/figure5.kdl` (UI theme), `zellij/figure5-web.kdl` (web client) |
 | Fresh         | Done           | `fresh/figure5-{warm-charcoal,softer-warm,cool}.json` |
 | Claude Code   | Done           | `claude/figure5-{warm-charcoal,softer-warm,cool}.json` |
+| Herdr         | Done           | `herdr/figure5-{warm-charcoal,softer-warm,cool}.toml`  |
 
 ## Ghostty Usage
 
@@ -105,6 +106,31 @@ Note: Claude Code does not set the terminal background — that comes from your 
 own colour scheme (pair it with the matching Ghostty variant). The theme controls Claude
 Code's own UI colours: the spinner/assistant accent, status colours, diff backgrounds,
 mode borders, and (in fullscreen mode) message backgrounds.
+
+## Herdr Usage
+
+Run `make herdr` to install (defaults to warm-charcoal), or specify a variant:
+
+```bash
+make herdr HERDR_VARIANT=softer-warm
+# or
+make herdr HERDR_VARIANT=cool
+```
+
+Then reload the running server:
+
+```bash
+herdr server reload-config
+```
+
+Alternatively, replace the `[theme]` and `[theme.custom]` sections in
+`~/.config/herdr/config.toml` manually with the contents of one of the
+`herdr/figure5-*.toml` files.
+
+The theme uses `name = "terminal"` as its base so herdr inherits your terminal's
+ANSI palette for anything not explicitly set, then overrides the UI colour tokens
+(accent, surfaces, overlays, status colours) with the Figure 5 palette. Pair with
+the matching Ghostty variant for full coverage.
 
 ## Slack Usage
 
