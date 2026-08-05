@@ -1,0 +1,24 @@
+# Figure 5 – Softer Warm (herdr theme)
+# Paste this into ~/.config/herdr/config.toml, replacing any existing [theme] section.
+
+[theme]
+name = "terminal"
+auto_switch = false
+
+[theme.custom]
+accent = "#E0CC1A"
+panel_bg = "#252220"
+surface0 = "#302C29"
+surface1 = "#3B3633"
+surface_dim = "#1C1916"
+overlay0 = "#443E39"
+overlay1 = "#504A44"
+text = "#F0E0B8"
+subtext0 = "#CDBA90"
+mauve = "#B84078"
+green = "#6CB200"
+yellow = "#E0CC1A"
+red = "#CC2211"
+blue = "#4878C8"
+teal = "#5A90A0"
+peach = "#FFD420"
