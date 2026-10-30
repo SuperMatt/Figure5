@@ -19,6 +19,7 @@ is red.
 | Fresh         | Done           | `fresh/figure5-{warm-charcoal,softer-warm,cool}.json` |
 | Claude Code   | Done           | `claude/figure5-{warm-charcoal,softer-warm,cool}.json` |
 | Herdr         | Done           | `herdr/figure5-{warm-charcoal,softer-warm,cool}.toml`  |
+| Rex           | Done           | `rex/figure5-{warm-charcoal,softer-warm,cool}.json`   |
 
 ## Ghostty Usage
 
@@ -80,6 +81,24 @@ in the [sinelaw/fresh](https://github.com/sinelaw/fresh) repo). They are full th
 `editor`, `ui`, `search`, `diagnostic`, and `syntax` colour key is set explicitly rather than
 inherited from a base. The syntax mapping mirrors the Helix theme (keyword=magenta, function=blue,
 string=green, type=cyan, constant=bright_magenta, comment=bright_black).
+
+## Rex Usage
+
+[Rex](https://www.superlogical.com/rex) imports Ghostty theme files natively: command
+palette (`⌘⇧P`) → **Import Theme File** → pick `ghostty/figure5-cool` (etc.). The import
+captures everything, including the selection colours and Rex's auto-generated extended
+16–255 palette. Then pick the theme from the theme picker. Note that importing the same
+file twice creates a duplicate custom theme (there is no dedup) — import once.
+
+The `rex/figure5-*.json` files are Rex's **native theme format** — the exact structure
+Rex stores under `Workspace.customThemes` in its preferences, exported with
+`defaults read`, minus the machine-local `id` and `createdAt` fields. They exist to
+version the full app-side state (selection colours, extended palette, generation flags)
+that a plain Ghostty file cannot carry, and so the theme can be re-injected into
+`defaults` on a new machine without re-importing. Rex has no JSON theme import, so
+these files are a record, not a drop-in: to load them into a fresh Rex, either import
+the matching `ghostty/` file (and optionally overwrite the defaults blob) or paste the
+contents back into `Workspace.customThemes` (adding a fresh `id` and `createdAt`).
 
 ## Claude Code Usage
 

@@ -142,6 +142,20 @@ Claude Code hot-reloads on save, so edits apply without a restart. The theme col
 Claude Code's own UI (spinner, status, diffs, mode borders); the terminal background
 comes from your terminal's colour scheme, so pair it with the matching Ghostty variant.
 
+### Rex
+
+[Rex](https://www.superlogical.com/rex) imports Ghostty theme files natively: command
+palette (`⌘⇧P`) → **Import Theme File** → pick `ghostty/figure5-cool` (etc.), then pick
+the theme from the theme picker. The import captures everything, including selection
+colours and Rex's auto-generated extended 16–255 palette. Importing the same file twice
+creates a duplicate custom theme, so import once.
+
+The `rex/figure5-*.json` files are Rex's **native theme format** (what it stores under
+`Workspace.customThemes` in its preferences), exported with `defaults read` minus the
+machine-local `id`/`createdAt`. They version the full app-side state — a record for
+re-injecting on a new machine; Rex has no JSON theme import, so load a fresh install
+via the Ghostty files above.
+
 ### VSCode / Cursor
 
 Copies the extension to `~/.vscode/extensions/figure5-theme-1.0.0/` (or `~/.cursor/extensions/`).
