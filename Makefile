@@ -6,6 +6,7 @@ ZELLIJ_THEMES_DIR  := $(HOME)/.config/zellij/themes
 FRESH_THEMES_DIR   := $(HOME)/.config/fresh/themes
 CLAUDE_THEMES_DIR  := $(HOME)/.claude/themes
 HERDR_CONFIG       := $(HOME)/.config/herdr/config.toml
+HERDR_APP_THEMES_DIR := $(HOME)/.config/herdr-app/themes
 VSCODE_EXT_DIR     := $(HOME)/.vscode/extensions/figure5-theme-1.0.0
 CURSOR_EXT_DIR     := $(HOME)/.cursor/extensions/figure5-theme-1.0.0
 
@@ -20,13 +21,13 @@ INSTALL    = cp
 SRC_PREFIX =
 endif
 
-.PHONY: all ghostty zed helix k9s zellij fresh claude herdr vscode cursor \
+.PHONY: all ghostty zed helix k9s zellij fresh claude herdr herdr-app vscode cursor \
         uninstall-ghostty uninstall-zed uninstall-helix uninstall-k9s \
         uninstall-zellij uninstall-fresh uninstall-claude uninstall-herdr \
-        uninstall-vscode uninstall-cursor \
+        uninstall-herdr-app uninstall-vscode uninstall-cursor \
         preview preview-cool showcase screenshot
 
-all: ghostty zed helix k9s zellij fresh claude herdr vscode cursor
+all: ghostty zed helix k9s zellij fresh claude herdr herdr-app vscode cursor
 
 ghostty:
 	mkdir -p $(GHOSTTY_THEMES_DIR)
@@ -94,6 +95,14 @@ open(cfg_path, 'w').write(cfg)
 endef
 export HERDR_INSTALL_SCRIPT
 
+# herdr-app (desktop): theme files are standalone JSON in themes/, so this is a
+# plain file install; the app's theme picker picks them up automatically.
+herdr-app:
+	mkdir -p $(HERDR_APP_THEMES_DIR)
+	$(INSTALL) $(SRC_PREFIX)herdr-app/figure5-warm-charcoal.json $(HERDR_APP_THEMES_DIR)/figure5-warm-charcoal.json
+	$(INSTALL) $(SRC_PREFIX)herdr-app/figure5-softer-warm.json $(HERDR_APP_THEMES_DIR)/figure5-softer-warm.json
+	$(INSTALL) $(SRC_PREFIX)herdr-app/figure5-cool.json $(HERDR_APP_THEMES_DIR)/figure5-cool.json
+
 # VSCode: installs as a local extension (no symlink support — always copies)
 vscode:
 	mkdir -p $(VSCODE_EXT_DIR)/themes
@@ -154,6 +163,11 @@ cfg = re.sub(r'\n?\[theme[\].].*?(?=\n\[(?!theme)|\Z)', '', cfg, flags=re.DOTALL
 open(cfg_path, 'w').write(cfg)
 endef
 export HERDR_UNINSTALL_SCRIPT
+
+uninstall-herdr-app:
+	rm -f $(HERDR_APP_THEMES_DIR)/figure5-warm-charcoal.json
+	rm -f $(HERDR_APP_THEMES_DIR)/figure5-softer-warm.json
+	rm -f $(HERDR_APP_THEMES_DIR)/figure5-cool.json
 
 uninstall-vscode:
 	rm -rf $(VSCODE_EXT_DIR)
