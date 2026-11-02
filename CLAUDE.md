@@ -256,6 +256,12 @@ all were rejected as too blue. A pure neutral `#1C1C1C` was chosen instead, pair
 with cool blue-grey whites (`#C4CED8` / `#E0EAF0`) to give a cooler feel without
 a coloured cast in the background itself.
 
+A full re-exploration of the cool background (2026-11-02) tested eight candidates
+in Ghostty files differing only in background, imported full-screen into Rex:
+blue-grey (`#1C1F24`, `#1A1F26`), violet-slate (`#1D1C24`, `#1B1A24`), sage
+green-grey (`#1A201E`, `#18201C`), and neutral depth (`#181818`, `#212121`).
+All were rejected — none beat `#1C1C1C`, which stays the settled choice.
+
 ### Foreground
 The warm variants use `#F0E0B8` — warm parchment/ivory, taken from the painting's
 white arcs. Avoids the harshness of pure white while maintaining strong contrast.
