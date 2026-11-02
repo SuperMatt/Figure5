@@ -52,9 +52,13 @@ variants share one ANSI palette; only the background differs).
 
 - Surfaces stepped from each variant's background, reusing tones already
   chosen elsewhere in the repo:
-  - warm variants: `chrome` `#151210` < `background` (#1E1B19 / #252220) <
+  - warm-charcoal (bg `#1E1B19`): `chrome` `#151210` < `background` <
     `canvas` `#252220` < `surface`/`raised` `#2A2623` < `popover`/`hover`
     `#35302C` < `border` `#3D3732`; `input` `#151210` (sunken field).
+  - softer-warm (bg `#252220`): same step sizes, shifted up so every layer
+    stays distinct: `chrome`/`input` `#1B1816` < `background` < `canvas`
+    `#2B2724` < `surface`/`raised` `#332E2A` < `popover`/`hover` `#3B3530` <
+    `border` `#453E38`.
   - cool variant: neutral grey steps around `#1C1C1C`:
     `chrome` `#141414`, `canvas` `#202020`, `surface`/`raised` `#242424`,
     `popover`/`hover` `#2C2C2C`, `border` `#383838`, `input` `#141414`.
