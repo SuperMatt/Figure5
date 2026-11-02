@@ -72,10 +72,12 @@ make k9s
 make zellij
 make fresh
 make claude
+make herdr
+make herdr-app
 make vscode
 make cursor
 
-make INSTALL_METHOD=copy   # copy files instead of symlinking (ghostty/zed/helix/k9s/zellij/fresh/claude)
+make INSTALL_METHOD=copy   # copy files instead of symlinking (ghostty/zed/helix/k9s/zellij/fresh/claude/herdr-app)
 ```
 
 ### Ghostty
@@ -141,6 +143,30 @@ v2.1.118+). Then pick one with the `/theme` command or the `/config` picker:
 Claude Code hot-reloads on save, so edits apply without a restart. The theme colours
 Claude Code's own UI (spinner, status, diffs, mode borders); the terminal background
 comes from your terminal's colour scheme, so pair it with the matching Ghostty variant.
+
+### Herdr
+
+Runs `make herdr` (or `make herdr HERDR_VARIANT=softer-warm|cool`), which writes the
+chosen theme into the `[theme]`/`[theme.custom]` sections of `~/.config/herdr/config.toml`
+(replacing any existing `[theme]` block). Then reload the running server:
+
+```sh
+herdr server reload-config
+```
+
+The theme uses `name = "terminal"` as its base, so herdr inherits the terminal's ANSI
+palette for anything not explicitly set; pair with the matching Ghostty variant.
+
+### Herdr (desktop app)
+
+Run `make herdr-app` to install, or copy the `.json` files to `~/.config/herdr-app/themes/`.
+The themes then appear in Herdr's theme picker (`app.theme` / Settings) alongside the
+built-ins — pick `figure5-warm-charcoal`, `figure5-softer-warm`, or `figure5-cool`.
+
+This targets the Herdr **desktop app** (`Herdr.app`); the Herdr *terminal server* is
+covered separately under [Herdr](#herdr) above. The desktop app's themes are standalone
+JSON files (`background`/`foreground`/`selection`/`cursor`, a 16-colour `ansi` array, and
+a `colors` map overriding the app-chrome palette), not `[theme]` config sections.
 
 ### Rex
 

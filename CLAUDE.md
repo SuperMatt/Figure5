@@ -19,6 +19,7 @@ is red.
 | Fresh         | Done           | `fresh/figure5-{warm-charcoal,softer-warm,cool}.json` |
 | Claude Code   | Done           | `claude/figure5-{warm-charcoal,softer-warm,cool}.json` |
 | Herdr         | Done           | `herdr/figure5-{warm-charcoal,softer-warm,cool}.toml`  |
+| Herdr (app)   | Done           | `herdr-app/figure5-{warm-charcoal,softer-warm,cool}.json` |
 | Rex           | Done           | `rex/figure5-{warm-charcoal,softer-warm,cool}.json`   |
 
 ## Ghostty Usage
@@ -150,6 +151,20 @@ The theme uses `name = "terminal"` as its base so herdr inherits your terminal's
 ANSI palette for anything not explicitly set, then overrides the UI colour tokens
 (accent, surfaces, overlays, status colours) with the Figure 5 palette. Pair with
 the matching Ghostty variant for full coverage.
+
+## Herdr (Desktop App) Usage
+
+Run `make herdr-app` to install, or copy the `.json` files to `~/.config/herdr-app/themes/`.
+The desktop app's theme picker (`app.theme` / Settings) lists them automatically — pick
+"figure5-warm-charcoal", "figure5-softer-warm", or "figure5-cool".
+
+The desktop app is a separate target from the Herdr terminal server above: its themes are
+standalone JSON files (`background`/`foreground`/`selection`/`cursor`, a 16-colour `ansi`
+array, and a `colors` map overriding the app-chrome palette), not `[theme]` sections in
+`config.toml`. The terminal layer is copied verbatim from the matching Ghostty files; the
+UI layer steps surfaces up from each variant's background, uses gold `#E0CC1A` as
+`accent`/`solid` ("the figure 5 in gold"), and follows the Claude Code status-colour rule
+(working=amber, blocked=red, done=yellow-green).
 
 ## Slack Usage
 
