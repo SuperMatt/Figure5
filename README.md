@@ -74,6 +74,7 @@ make fresh
 make claude
 make herdr
 make herdr-app
+make pi
 make vscode
 make cursor
 
@@ -167,6 +168,17 @@ This targets the Herdr **desktop app** (`Herdr.app`); the Herdr *terminal server
 covered separately under [Herdr](#herdr) above. The desktop app's themes are standalone
 JSON files (`background`/`foreground`/`selection`/`cursor`, a 16-colour `ansi` array, and
 a `colors` map overriding the app-chrome palette), not `[theme]` config sections.
+
+### Pi
+
+Run `make pi` to symlink the themes into `~/.pi/agent/themes/`, then select one with
+Pi's `/settings` screen. The default install uses symlinks, so changes in this repo are
+picked up after `/reload`.
+
+The three theme names are `figure5-warm-charcoal`, `figure5-softer-warm`, and
+`figure5-cool`. Pi's UI, Markdown, syntax highlighting, tool output, diffs, and HTML
+exports all use the Figure 5 palette. Pair Pi with the matching terminal variant; the
+active terminal background itself remains terminal-owned.
 
 ### Rex
 

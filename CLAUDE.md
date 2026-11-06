@@ -21,6 +21,7 @@ is red.
 | Herdr         | Done           | `herdr/figure5-{warm-charcoal,softer-warm,cool}.toml`  |
 | Herdr (app)   | Done           | `herdr-app/figure5-{warm-charcoal,softer-warm,cool}.json` |
 | Rex           | Done           | `rex/figure5-{warm-charcoal,softer-warm,cool}.json`   |
+| Pi            | Done           | `pi/figure5-{warm-charcoal,softer-warm,cool}.json`    |
 
 ## Ghostty Usage
 
@@ -165,6 +166,16 @@ array, and a `colors` map overriding the app-chrome palette), not `[theme]` sect
 UI layer steps surfaces up from each variant's background, uses gold `#E0CC1A` as
 `accent`/`solid` ("the figure 5 in gold"), and follows the Claude Code status-colour rule
 (working=amber, blocked=red, done=yellow-green).
+
+## Pi Usage
+
+Run `make pi` to symlink the themes into `~/.pi/agent/themes/`, then select
+`figure5-warm-charcoal`, `figure5-softer-warm`, or `figure5-cool` in Pi's `/settings`
+screen. Run `/reload` after changing a source theme while Pi is open.
+
+Pi's UI, Markdown, syntax highlighting, tool output, diffs, and HTML exports use the
+Figure 5 palette. The terminal background remains terminal-owned, so pair Pi with the
+matching Ghostty variant.
 
 ## Slack Usage
 
