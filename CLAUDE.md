@@ -22,6 +22,7 @@ is red.
 | Herdr (app)   | Done           | `herdr-app/figure5-{warm-charcoal,softer-warm,cool}.json` |
 | Rex           | Done           | `rex/figure5-{warm-charcoal,softer-warm,cool}.json`   |
 | Pi            | Done           | `pi/figure5-{warm-charcoal,softer-warm,cool}.json`    |
+| rex-rune      | Cool only      | `rex-rune/figure5-cool.patch` (chrome palette; source patch), terminal via `ghostty/figure5-cool` |
 
 ## Ghostty Usage
 
@@ -166,6 +167,17 @@ array, and a `colors` map overriding the app-chrome palette), not `[theme]` sect
 UI layer steps surfaces up from each variant's background, uses gold `#E0CC1A` as
 `accent`/`solid` ("the figure 5 in gold"), and follows the Claude Code status-colour rule
 (working=amber, blocked=red, done=yellow-green).
+
+## rex-rune Usage
+
+rex-rune (`rex-linux`, the native Linux Rex client) reads Ghostty themes from
+`~/.config/ghostty/themes`, so the terminal colours need no new file: pick **figure5-cool**
+in Settings → Terminal → Theme (`"terminal_theme": "named:figure5-cool"`).
+
+Its chrome palettes are compiled in, so the interface theme is a source patch:
+`rex-rune/figure5-cool.patch` (against `v0.5.2`) adds a **Figure 5 – Cool** chrome palette
+and a paired built-in terminal theme. See `rex-rune/README.md` for build steps and the token
+mapping (gold accent, amber warning, red reserved for danger, crimson selection).
 
 ## Pi Usage
 

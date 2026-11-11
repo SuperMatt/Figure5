@@ -1,0 +1,135 @@
+diff --git a/src/app/tests.rs b/src/app/tests.rs
+index d79d9f0..686810a 100644
+--- a/src/app/tests.rs
++++ b/src/app/tests.rs
+@@ -1511,6 +1511,7 @@ fn the_theme_picker_filters_declares_to_every_host_and_returns_to_settings() {
+             row("Rosé Pine", "Built in", false),
+             row("Rosé Pine Moon", "Built in", false),
+             row("Gruvbox Dark", "Built in", false),
++            row("Figure 5 – Cool", "Built in", false),
+             row("Rex Test Mocha", "Dark", false),
+             row("Paper", "Light", false),
+         ]
+@@ -3139,6 +3140,7 @@ fn a_chrome_palette_applies_at_once_and_brings_its_terminal_theme_until_one_is_c
+             ("Rosé Pine".to_owned(), false),
+             ("Rosé Pine Moon".to_owned(), false),
+             ("Gruvbox Dark".to_owned(), false),
++            ("Figure 5 – Cool".to_owned(), false),
+         ]
+     );
+     let rose = rt
+diff --git a/src/app/theme.rs b/src/app/theme.rs
+index 992f9fa..bebac9a 100644
+--- a/src/app/theme.rs
++++ b/src/app/theme.rs
+@@ -140,6 +140,26 @@ pub static GRUVBOX_DARK: Palette = Palette {
+     kit: OnceLock::new(),
+ };
+ 
++/// Figure 5 – Cool: neutral charcoal ground, cool blue-grey text, gold accent ("the figure 5
++/// in gold"), blue second accent, yellow-green success, amber warning and red reserved for
++/// danger, so the three status colours stay apart by hue and luminance for a deuteranope.
++/// Selection is the theme's crimson.
++pub static FIGURE5_COOL: Palette = Palette {
++    ground: 0x1c1c1c,
++    card: 0x1c1c1c,
++    popover: 0x2c2c2c,
++    ink: 0xd8dde4,
++    muted: 0x8a96a0,
++    accent: 0xe0cc1a,
++    accent2: 0x5080d0,
++    live: 0x6cb200,
++    warning: 0xe0961a,
++    danger: 0xff3322,
++    on_accent: 0x1c1c1c,
++    terminal_selection: 0x5c1a1a,
++    kit: OnceLock::new(),
++};
++
+ /// The palette a chrome theme draws in.
+ pub fn palette_of(chrome: ChromeTheme) -> &'static Palette {
+     match chrome {
+@@ -147,6 +167,7 @@ pub fn palette_of(chrome: ChromeTheme) -> &'static Palette {
+         ChromeTheme::RosePine => &ROSE_PINE,
+         ChromeTheme::RosePineMoon => &ROSE_PINE_MOON,
+         ChromeTheme::GruvboxDark => &GRUVBOX_DARK,
++        ChromeTheme::Figure5Cool => &FIGURE5_COOL,
+     }
+ }
+ 
+diff --git a/src/settings.rs b/src/settings.rs
+index 561a720..edc0147 100644
+--- a/src/settings.rs
++++ b/src/settings.rs
+@@ -65,16 +65,18 @@ pub enum ChromeTheme {
+     RosePine,
+     RosePineMoon,
+     GruvboxDark,
++    Figure5Cool,
+     #[default]
+     #[serde(other)]
+     Midnight,
+ }
+ impl ChromeTheme {
+-    pub const ALL: [ChromeTheme; 4] = [
++    pub const ALL: [ChromeTheme; 5] = [
+         ChromeTheme::Midnight,
+         ChromeTheme::RosePine,
+         ChromeTheme::RosePineMoon,
+         ChromeTheme::GruvboxDark,
++        ChromeTheme::Figure5Cool,
+     ];
+     pub fn name(self) -> &'static str {
+         match self {
+@@ -82,6 +84,7 @@ impl ChromeTheme {
+             ChromeTheme::RosePine => "Rosé Pine",
+             ChromeTheme::RosePineMoon => "Rosé Pine Moon",
+             ChromeTheme::GruvboxDark => "Gruvbox Dark",
++            ChromeTheme::Figure5Cool => "Figure 5 – Cool",
+         }
+     }
+ }
+@@ -489,6 +492,7 @@ mod tests {
+             (ChromeTheme::RosePine, "rose_pine"),
+             (ChromeTheme::RosePineMoon, "rose_pine_moon"),
+             (ChromeTheme::GruvboxDark, "gruvbox_dark"),
++            (ChromeTheme::Figure5Cool, "figure5_cool"),
+         ] {
+             let s = Settings {
+                 chrome_theme: chrome,
+diff --git a/src/terminal_theme.rs b/src/terminal_theme.rs
+index 214883a..a722632 100644
+--- a/src/terminal_theme.rs
++++ b/src/terminal_theme.rs
+@@ -80,6 +80,12 @@ pub const BUILTINS: &[Builtin] = &[
+         chrome: ChromeTheme::GruvboxDark,
+         theme: TerminalTheme::gruvbox_dark,
+     },
++    Builtin {
++        id: "figure5-cool",
++        name: "Figure 5 – Cool",
++        chrome: ChromeTheme::Figure5Cool,
++        theme: TerminalTheme::figure5_cool,
++    },
+ ];
+ 
+ /// The built-in theme a `named:` id refers to, if it names one.
+@@ -142,6 +148,18 @@ impl TerminalTheme {
+         }
+     }
+ 
++    /// Figure 5 – Cool, as its Ghostty theme draws it.
++    pub fn figure5_cool() -> Self {
++        Self::full(
++            0x1c1c1c,
++            [0xd8dde4, 0xe0eaf0, 0x1c1c1c, 0x5c1a1a, 0xd8dde4],
++            [
++                0x1c0a0c, 0xcc2211, 0x6cb200, 0xe0cc1a, 0x4878c8, 0xb84078, 0x5a90a0, 0xc4ced8,
++                0x8a6448, 0xff3322, 0x78e000, 0xffd420, 0x5080d0, 0xc04880, 0x68a8b8, 0xe0eaf0,
++            ],
++        )
++    }
++
+     /// A dark theme with every colour: foreground, cursor, cursor text, selection background
+     /// and selection foreground, then palette colours 0–15.
+     fn full(
